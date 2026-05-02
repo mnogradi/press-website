@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Publications | North Pass Press. Explore our collection of restored, unabridged historical literature and poetry.">
+    <title>Publications | North Pass Press</title>
+    <link rel="icon" type="image/png" href="assets/images/spine%20logo.png">
+    <link rel="apple-touch-icon" href="assets/images/spine%20logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'midnight': '#10131A',
+                        'charcoal': '#1A1F2A',
+                        'slate': '#252D3A',
+                        'warm-white': '#F4F1EA',
+                        'ivory': '#EDE8DF',
+                        'gold': '#B8965A',
+                        'gold-light': '#D4B07A',
+                        'gold-faint': '#F0E8D6',
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Marcellus&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="overflow-x-hidden bg-[#f9f7f2]">
+
+    <!-- Navigation -->
+    <nav role="navigation" aria-label="Main navigation" class="bg-midnight border-b border-white/5">
+        <div class="container flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-4 group hover:opacity-80 transition-opacity">
+                <img src="assets/images/spine%20logo.png" alt="North Pass Monogram" class="h-10 md:h-12 w-auto brightness-0 invert opacity-90">
+                <span class="logo-main text-white mt-[1px]">North Pass Press</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="publications.html" class="nav-link active">Books</a>
+                <!-- <a href="craft.html" class="nav-link">The Craft</a> -->
+                <a href="support.html" class="nav-link">Support</a>
+                <a href="contact.html" class="nav-link nav-cta">Contact Us</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Mobile Overlay -->
+        <div class="mobile-overlay" id="mobile-overlay">
+            <button id="mobile-close-btn" aria-label="Close menu"
+                style="position:absolute;top:28px;right:32px;background:none;border:none;cursor:pointer;color:white;font-size:1.5rem;line-height:1;opacity:0.7;"
+                onmouseenter="this.style.opacity='1'" onmouseleave="this.style.opacity='0.7'">✕</button>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="publications.html" class="nav-link active">Books</a>
+            <!-- <a href="craft.html" class="nav-link">The Craft</a> -->
+            <a href="support.html" class="nav-link">Support</a>
+            <a href="contact.html" class="nav-link nav-cta mt-4 text-center">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Shop Header -->
+    <header class="relative bg-slate text-white pt-40 pb-20 px-6 overflow-hidden border-b border-white/5" style="background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); background-blend-mode: overlay;">
+        <div class="aurora-glow opacity-40"></div>
+        <div class="max-w-7xl mx-auto relative z-10 fade-in text-center">
+            <p class="sans-label text-white/50 mb-4 tracking-[0.2em] text-[11px] uppercase font-bold">The Archive</p>
+            <h1 class="serif-heading text-4xl md:text-6xl">Available Titles</h1>
+        </div>
+    </header>
+
+    <!-- Shop Utility Bar 
+    <div class="sticky top-[75px] md:top-[90px] z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between text-[12px] sans-label font-bold uppercase tracking-widest text-slate-500">
+        <div class="flex gap-8 items-center overflow-x-auto no-scrollbar pb-1 md:pb-0 filter-controls">
+            <button data-filter="all" class="filter-btn active text-midnight border-b border-midnight pb-1">All Titles</button>
+            <button data-filter="poetry" class="filter-btn hover:text-midnight transition-colors">Poetry</button>
+            <button data-filter="history" class="filter-btn hover:text-midnight transition-colors">History</button>
+            </div>
+    </div>
+    </div>-->
+
+    <!-- All Publications Grid -->
+    <section class="py-20 px-6 bg-[#EDE8DF] min-h-[600px]">
+        <div class="max-w-4xl mx-auto">
+            <div id="publications-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-y-10 gap-x-10 transition-all duration-500">
+
+
+                <!-- Book 1: Bunyan -->
+                <a href="bunyan.html" class="book-item group cursor-pointer relative flex flex-col fade-in block outline-none hover:outline-none focus:outline-none bg-white border border-slate-100 shadow-sm hover:border-slate-200 hover:shadow-md transition-all duration-300 p-6" data-category="poetry">
+                    <div class="aspect-[13/14] bg-[#f9f7f2] mb-6 relative overflow-hidden flex items-center justify-center transition-all duration-500">
+                        <!-- <div class="absolute top-0 right-0 bg-midnight text-white text-[9px] sans-label px-3 py-1.5 uppercase tracking-widest z-10 font-bold">New Release</div> -->
+                        <img src="assets/images/bunyanimg.png" alt="A Book for Boys and Girls" class="h-[85%] w-auto  transform group-hover:scale-105 transition-transform duration-700 pointer-events-none object-contain">
+                    </div>
+                    
+                    <div class="flex flex-col flex-grow">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="sans-label text-[10px] text-slate font-bold uppercase tracking-widest">Poetry</span>
+                            <div class="text-right">
+                                <span class="text-sm font-semibold text-midnight">
+                                    <span class="text-[8px] align-top text-slate-400">$</span>8.99
+                                </span>
+                            </div>
+                        </div>
+                        <h3 class="serif-heading text-2xl mb-2 group-hover:text-[#C4A47C] transition-colors">A Book for Boys and Girls</h3>
+                        <p class="text-sm text-slate-400 line-clamp-3 mb-4">First published in 1686, <i>A Book for Boys and Girls</i>—later known as <i>Divine Emblems</i>—is John Bunyan's ingenious attempt to “play the fool” in order to win the souls of children and the “childish” alike.</p>
+                        <div class="mt-auto">
+                            <span class="inline-flex items-center gap-2 text-[10px] sans-label font-bold uppercase tracking-[0.2em] text-midnight group/link">
+                                Explore Edition
+                                <span class="w-8 h-px bg-midnight group-hover/link:w-12 transition-all"></span>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Book 2: The Storm -->
+                <a href="defoe.html" class="book-item group cursor-pointer relative flex flex-col fade-in block outline-none hover:outline-none focus:outline-none bg-white border border-slate-100 shadow-sm hover:border-slate-200 hover:shadow-md transition-all duration-300 p-6" data-category="history">
+                    <div class="aspect-[13/14] bg-[#f9f7f2] mb-6 relative overflow-hidden flex items-center justify-center transition-all duration-500">
+                        <!-- <div class="absolute top-0 right-0 bg-midnight text-white text-[9px] sans-label px-3 py-1.5 uppercase tracking-widest z-10 font-bold">New Release</div> -->
+                        <img src="assets/images/defoepng.png" alt="The Storm" class="h-[85%] w-auto transform group-hover:scale-105 transition-transform duration-700 pointer-events-none object-contain">
+                    </div>
+                    
+                    <div class="flex flex-col flex-grow">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="sans-label text-[10px] text-slate font-bold uppercase tracking-widest">History</span>
+                            <div class="text-right">
+                                <span class="text-sm font-semibold text-midnight">
+                                    <span class="text-[8px] align-top text-slate-400">$</span>18.99
+                                </span>
+                            </div>
+                        </div>
+                        <h3 class="serif-heading text-2xl mb-2 group-hover:text-[#C4A47C] transition-colors">The Storm</h3>
+                        <p class="text-sm text-slate-400 line-clamp-3 mb-4">In the final days of November 1703, a hurricane of unprecedented violence swept across Great Britain, leaving behind a trail of ruin and loss that would be remembered for generations.
+                        </p>
+                        <div class="mt-auto">
+                            <span class="inline-flex items-center gap-2 text-[10px] sans-label font-bold uppercase tracking-[0.2em] text-midnight group/link">
+                                Explore Edition
+                                <span class="w-8 h-px bg-midnight group-hover/link:w-12 transition-all"></span>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- JS Filtering Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const bookItems = document.querySelectorAll('.book-item');
+            const grid = document.getElementById('publications-grid');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Update Active Button
+                    filterBtns.forEach(b => b.classList.remove('text-midnight', 'border-b', 'border-midnight', 'pb-1'));
+                    btn.classList.add('text-midnight', 'border-b', 'border-midnight', 'pb-1');
+
+                    const filterValue = btn.getAttribute('data-filter');
+
+                    // Smooth transition for the whole grid
+                    grid.style.opacity = '0.5';
+                    
+                    setTimeout(() => {
+                        bookItems.forEach(item => {
+                            if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                                item.classList.remove('hidden');
+                                item.style.display = 'flex';
+                                // Trigger vertical reveal
+                                item.style.transform = 'translateY(10px)';
+                                item.style.opacity = '0';
+                                
+                                requestAnimationFrame(() => {
+                                    item.style.transition = 'all 0.4s ease-out';
+                                    item.style.transform = 'translateY(0)';
+                                    item.style.opacity = '1';
+                                });
+                            } else {
+                                item.style.display = 'none';
+                                item.classList.add('hidden');
+                            }
+                        });
+                        grid.style.opacity = '1';
+                    }, 200);
+                });
+            });
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer id="about" class="bg-midnight text-white pt-12 pb-6 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-white/10 pb-8 mb-6">
+            <div class="md:col-span-2">
+                <div class="flex items-center gap-4 mb-6">
+                    <img src="assets/images/spine%20logo.png" alt="North Pass Monogram" class="h-8 md:h-10 w-auto brightness-0 invert opacity-90">
+                    <span class="logo-main text-white mt-[1px]">North Pass Press</span>
+                </div>
+                <p class="text-white/60 text-sm leading-relaxed max-w-sm">
+                    Recovering historical English and Christian literature through faithful modern editions.
+                </p>
+            </div>
+            <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div>
+                    <div class="h-8 md:h-10 flex items-center mb-3 pt-[2px]">
+                        <h4 class="sans-label text-xs uppercase tracking-widest">Explore</h4>
+                    </div>
+                    <ul class="text-sm space-y-1.5 text-white/60">
+                        <li><a href="about.html" class="hover:text-white">About</a></li>
+                        <li><a href="publications.html" class="hover:text-white">Books</a></li>
+                        <!-- <li><a href="craft.html" class="hover:text-white">The Craft</a></li> -->
+                        <li><a href="support.html" class="hover:text-white">Support</a></li>
+                        <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="h-8 md:h-10 flex items-center mb-3 pt-[2px]">
+                        <h4 class="sans-label text-xs uppercase tracking-widest">Connect</h4>
+                    </div>
+                    <p class="text-sm text-white/60 mb-4">For inquiries or support, contact us at:</p>
+                    <div class="border border-white/20 p-3 sm:p-4 flex justify-between items-center gap-2">
+                        <span class="text-xs text-white/40 truncate" id="email-address">contact@northpasspress.com</span>
+                        <button class="text-white/40 shrink-0 hover:text-white transition-colors" onclick="copyEmail()" aria-label="Copy email address">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-[10px] text-white/30 uppercase tracking-[0.2em]">
+            <span>&copy; 2026 North Pass Press</span>
+            <span class="mt-4 md:mt-0"></span>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

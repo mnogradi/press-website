@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="North Pass Press — Typographic restoration of historical English and Christian literature. Providing clean, unabridged editions recovered for the modern library.">
+    <meta name="keywords"
+        content="John Gill, John Bunyan, Reformed theology, historical reprints, clean typesetting, English masterpieces">
+    <meta name="author" content="North Pass Press">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="North Pass Press | A Way in the Wilderness">
+    <meta property="og:description"
+        content="North Pass Press — Typographic restoration of historical English and Christian literature. Providing clean, unabridged editions recovered for the modern library.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://northpasspress.com">
+    <meta property="og:image" content="https://northpasspress.com/assets/images/spine%20logo.png">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="North Pass Press | A Way in the Wilderness">
+    <meta name="twitter:description"
+        content="North Pass Press — Typographic restoration of historical English and Christian literature. Providing clean, unabridged editions recovered for the modern library.">
+    <meta name="twitter:image" content="https://northpasspress.com/assets/images/spine%20logo.png">
+
+    <title>North Pass Press | A Way in the Wilderness</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/spine%20logo.png">
+    <link rel="apple-touch-icon" href="assets/images/spine%20logo.png">
+
+    <!-- Stylesheets -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'midnight': '#10131A',
+                        'charcoal': '#1A1F2A',
+                        'slate': '#252D3A',
+                        'warm-white': '#F4F1EA',
+                        'ivory': '#EDE8DF',
+                        'gold': '#B8965A',
+                        'gold-light': '#D4B07A',
+                        'gold-faint': '#F0E8D6',
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Marcellus&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <style>
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            width: 100%;
+        }
+
+        .carousel-slide {
+            flex: 0 0 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav role="navigation" aria-label="Main navigation" class="bg-midnight border-b border-white/5">
+        <div class="container flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-4 group hover:opacity-80 transition-opacity">
+                <img src="assets/images/spine%20logo.png" alt="North Pass Monogram"
+                    class="h-10 md:h-12 w-auto brightness-0 invert opacity-90">
+                <span class="logo-main text-white mt-[1px]">North Pass Press</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="publications.html" class="nav-link">Books</a>
+                <!-- <a href="craft.html" class="nav-link">The Craft</a> -->
+                <a href="support.html" class="nav-link">Support</a>
+                <a href="contact.html" class="nav-link nav-cta">Contact Us</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Mobile Overlay -->
+        <div class="mobile-overlay" id="mobile-overlay">
+            <!-- Close Button -->
+            <button id="mobile-close-btn" aria-label="Close menu"
+                style="position:absolute;top:28px;right:32px;background:none;border:none;cursor:pointer;color:white;font-size:1.5rem;line-height:1;opacity:0.7;"
+                onmouseenter="this.style.opacity='1'" onmouseleave="this.style.opacity='0.7'">✕</button>
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="publications.html" class="nav-link">Books</a>
+            <!-- <a href="craft.html" class="nav-link">The Craft</a> -->
+            <a href="support.html" class="nav-link">Support</a>
+            <a href="contact.html" class="nav-link nav-cta mt-4 text-center">Contact Us</a>
+        </div>
+    </nav>
+
+    <header class="relative min-h-screen flex items-center bg-slate overflow-hidden pt-20"
+        style="background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); background-blend-mode: overlay;">
+        <!-- Artistic Aurora Glow -->
+        <div class="aurora-glow opacity-50"></div>
+
+        <div class="container relative z-10 px-6 text-center flex flex-col items-center fade-in">
+            <!-- Decorative Element -->
+            <div class="flex items-center gap-4 mb-8 justify-center">
+                <span class="w-12 h-[1px] bg-gold"></span>
+                <p class="sans-label text-gold tracking-[0.3em] text-[11px] uppercase font-bold">North Pass Press</p>
+                <span class="w-12 h-[1px] bg-gold"></span>
+            </div>
+
+            <h1
+                class="serif-heading text-white text-5xl md:text-8xl lg:text-[7.5rem] leading-[1.05] mb-8 tracking-tight max-w-5xl mx-auto">
+                A Way in the <br>
+                <span class="italic text-gold">Wilderness</span>
+            </h1>
+            <p class="text-white/70 text-lg md:text-xl font-light mb-12 max-w-2xl mx-auto leading-relaxed italic">
+                Faithful Editions for the Modern Library
+            </p>
+
+            <div class="flex flex-wrap gap-12 items-center justify-center mt-4">
+                <a href="#spotlight"
+                    class="text-white sans-label text-[13px] uppercase tracking-[0.3em] font-bold flex items-center gap-4 group transition-all">
+                    Explore New Releases
+                    <span class="w-16 h-[1px] bg-gold group-hover:w-24 transition-all duration-500"></span>
+                </a>
+                <!-- <a href="craft.html" class="text-white/40 hover:text-white sans-label text-[12px] uppercase tracking-[0.25em] flex items-center gap-4 group transition-colors">
+                    The Craft
+                    <span class="w-8 h-[1px] bg-white/10 group-hover:w-12 group-hover:bg-gold transition-all duration-500"></span>
+                </a> -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Available Now Carousel - Hidden for Launch
+    <section id="collections" class="py-24 px-6 bg-warm-white border-b border-ivory overflow-hidden scroll-mt-20">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="sans-label text-slate">Digital Downloads</span>
+                <h2 class="serif-heading text-4xl mt-2 mb-4">Available Now</h2>
+                <div class="section-rule"></div>
+            </div>
+
+            <div class="relative max-w-5xl mx-auto group/carousel">
+                <div id="templateCarousel" class="carousel-container">
+                    <div class="carousel-track" id="carouselTrack">
+                        
+                        <div class="carousel-slide px-4">
+                            <div class="bg-white border border-ivory p-8 md:p-10 flex flex-col md:flex-row gap-12 items-center collection-card shadow-card">
+                                <div class="w-full md:w-[40%] aspect-[3/4] bg-warm-white border border-ivory flex items-center justify-center p-8 relative">
+                                    <div class="coming-soon-badge bg-gold text-white">Available</div>
+                                    <div class="w-full h-full bg-charcoal border border-white/20 flex flex-col items-center justify-center p-6 text-center">
+                                        <div class="w-8 h-px bg-white/20 mb-4"></div>
+                                        <span class="serif-heading text-white text-lg mb-2 italic">Lyric & Verse</span>
+                                        <span class="serif-heading text-white/40 text-[10px] uppercase tracking-widest">Type Template</span>
+                                        <div class="w-8 h-px bg-white/20 mt-4"></div>
+                                    </div>
+                                </div>
+                                <div class="w-full md:w-[60%] text-center md:text-left">
+                                    <span class="sans-label text-text-muted text-xs mb-2 block">Premium Resource</span>
+                                    <h3 class="serif-heading text-3xl mb-4">The Poetry Book</h3>
+                                    <p class="text-slate leading-relaxed mb-8 font-light">
+                                        A specialized Typst layout for lyric wisdom. Optimized for verse indentation, stanza breaks, and delicate typography. Perfect for chapbooks and full-length anthologies.
+                                    </p>
+                                    <a href="craft.html" class="inline-block bg-gold text-white px-8 py-3 sans-label text-xs hover:bg-gold-light transition uppercase tracking-widest font-bold">
+                                        View Details
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide px-4">
+                            <div class="bg-white border border-ivory p-8 md:p-10 flex flex-col md:flex-row gap-12 items-center collection-card shadow-card">
+                                <div class="w-full md:w-[40%] aspect-[3/4] bg-warm-white border border-ivory flex items-center justify-center p-8 relative">
+                                    <div class="coming-soon-badge">In Dev</div>
+                                    <div class="w-full h-full bg-charcoal border border-white/20 flex flex-col items-center justify-center p-6 text-center">
+                                        <span class="serif-heading text-white text-xl mb-1 italic">Exposition</span>
+                                        <span class="serif-heading text-white/40 text-[8px] uppercase tracking-[0.3em] mb-4">of the</span>
+                                        <span class="serif-heading text-white text-lg italic">Old & New Testament</span>
+                                    </div>
+                                </div>
+                                <div class="w-full md:w-[60%] text-center md:text-left">
+                                    <span class="sans-label text-text-muted text-xs mb-2 block">Scholarly Tool</span>
+                                    <h3 class="serif-heading text-3xl mb-4">The Gill Commentary</h3>
+                                    <p class="text-slate leading-relaxed mb-8 font-light">
+                                        A multi-column framework for doctrinal works. Inspired by 18th-century typesetting and optimized for dense theological notation and cross-referencing.
+                                    </p>
+                                    <a href="craft.html" class="inline-block bg-gold text-white px-8 py-3 sans-label text-xs hover:bg-gold-light transition uppercase tracking-widest font-bold">
+                                        Join Waitlist
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide px-4">
+                            <div class="bg-white border border-ivory p-8 md:p-10 flex flex-col md:flex-row gap-12 items-center collection-card shadow-card">
+                                <div class="w-full md:w-[40%] aspect-[3/4] bg-warm-white border border-ivory flex items-center justify-center p-8 relative">
+                                    <div class="coming-soon-badge">New</div>
+                                    <div class="w-full h-full bg-charcoal border border-white/20 flex flex-col items-center justify-center p-6 text-center">
+                                        <div class="w-12 h-px bg-white/20 mb-6"></div>
+                                        <span class="serif-heading text-white text-2xl mb-2 italic">Prose & Form</span>
+                                        <span class="serif-heading text-white/40 text-[10px] uppercase tracking-[0.4em]">Reader Edition</span>
+                                        <div class="w-12 h-px bg-white/20 mt-6"></div>
+                                    </div>
+                                </div>
+                                <div class="w-full md:w-[60%] text-center md:text-left">
+                                    <span class="sans-label text-text-muted text-xs mb-2 block">Academic Framework</span>
+                                    <h3 class="serif-heading text-3xl mb-4">The Classics Reader</h3>
+                                    <p class="text-slate leading-relaxed mb-8 font-light">
+                                        An elegant single-column layout for classical prose. Features expansive, scholar-friendly margins, tailored drop caps, and meticulous footnote handling.
+                                    </p>
+                                    <a href="craft.html" class="inline-block bg-gold text-white px-8 py-3 sans-label text-xs hover:bg-gold-light transition uppercase tracking-widest font-bold">
+                                        View Details
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button onclick="prevSlide()" class="absolute -left-6 md:-left-12 top-1/2 -translate-y-1/2 bg-white/80 border border-slate-100 p-3 shadow-sm hover:bg-white transition-all z-30 group-hover/carousel:left-0 opacity-0 group-hover/carousel:opacity-100">
+                    <svg class="w-5 h-5 text-midnight" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19l-7-7 7-7" /></svg>
+                </button>
+                <button onclick="nextSlide()" class="absolute -right-6 md:-right-12 top-1/2 -translate-y-1/2 bg-white/80 border border-slate-100 p-3 shadow-sm hover:bg-white transition-all z-30 group-hover/carousel:right-0 opacity-0 group-hover/carousel:opacity-100">
+                    <svg class="w-5 h-5 text-midnight" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7" /></svg>
+                </button>
+
+                <div class="flex justify-center gap-2 mt-8" id="carouselDots">
+                    <button onclick="goToSlide(0)" class="w-2 h-2 rounded-full bg-midnight transition-all carousel-dot"></button>
+                    <button onclick="goToSlide(1)" class="w-2 h-2 rounded-full bg-slate-300 transition-all carousel-dot"></button>
+                    <button onclick="goToSlide(2)" class="w-2 h-2 rounded-full bg-slate-300 transition-all carousel-dot"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- The Spotlight -->
+    <section id="spotlight" class="py-24 px-6 bg-ivory border-t border-white/20">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="sans-label text-slate">Curated Features</span>
+                <h2 class="serif-heading text-4xl mt-2 mb-4">The Spotlight</h2>
+                <div class="section-rule"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <!-- Bunyan Spotlight -->
+                <a href="bunyan.html"
+                    class="spotlight-card flex flex-col group cursor-pointer bg-white border border-slate-100 shadow-sm hover:border-slate-200 hover:shadow-md transition-all duration-300 p-6 block relative outline-none">
+                    <div class="coming-soon-badge">New Release</div>
+                    <div
+                        class="mb-8 flex justify-center items-center bg-[#f9f7f2] p-6 border border-[#f9f7f2] h-80 overflow-hidden">
+                        <img src="assets/images/bunyanimg.png" alt="A Book for Boys and Girls by John Bunyan"
+                            class="h-full w-auto object-contain shadow-deep transform group-hover:scale-105 transition-transform duration-700 pointer-events-none">
+                    </div>
+                    <span class="sans-label text-text-muted text-xs mb-2 block">John Bunyan | 17th Century Verse</span>
+                    <h3 class="serif-heading text-xl mb-4 group-hover:text-[#C4A47C] transition-colors">A Book for Boys
+                        and Girls</h3>
+                    <p class="text-slate leading-relaxed mb-6 font-light flex-grow">
+                        First published in 1686, this North Pass Press edition restores the unabridged text of Bunyan’s
+                        ingenious attempt to “play the fool” in order to win the souls of children and the “childish”
+                        alike.
+                    </p>
+                    <div class="mt-auto">
+                        <span
+                            class="inline-flex items-center gap-2 text-text-muted sans-label text-xs uppercase tracking-widest group-hover:text-midnight transition-colors">
+                            Explore the Edition
+                            <span class="w-8 h-[1px] bg-gold group-hover:w-12 transition-all duration-300"></span>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Defoe Spotlight -->
+                <a href="defoe.html"
+                    class="spotlight-card flex flex-col group cursor-pointer bg-white border border-slate-100 shadow-sm hover:border-slate-200 hover:shadow-md transition-all duration-300 p-6 block relative outline-none">
+                    <div class="coming-soon-badge">New Release</div>
+                    <div
+                        class="mb-8 flex justify-center items-center bg-[#f9f7f2] p-6 border border-[#f9f7f2] h-80 overflow-hidden">
+                        <img src="assets/images/defoepng.png" alt="The Storm by Daniel Defoe"
+                            class="h-full w-auto object-contain shadow-deep transform group-hover:scale-105 transition-transform duration-700 pointer-events-none">
+                    </div>
+                    <span class="sans-label text-text-muted text-xs mb-2 block">Daniel Defoe | English Realism</span>
+                    <h3 class="serif-heading text-xl mb-4 group-hover:text-[#C4A47C] transition-colors">The Storm</h3>
+                    <p class="text-slate leading-relaxed mb-6 font-light flex-grow">
+                        Daniel Defoe's masterful chronicle provides a terrifyingly vivid portrait of nature’s power,
+                        featuring the complete 1704 text modernized for the contemporary reader.
+                    </p>
+                    <div class="mt-auto">
+                        <span
+                            class="inline-flex items-center gap-2 text-text-muted sans-label text-xs uppercase tracking-widest group-hover:text-midnight transition-colors">
+                            Explore the Edition
+                            <span class="w-8 h-[1px] bg-gold group-hover:w-12 transition-all duration-300"></span>
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why North Pass Press -->
+    <section class="py-24 px-6 bg-white border-t border-slate-100">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="sans-label text-slate mb-3 block">Our Standard</span>
+                <h2 class="serif-heading text-3xl md:text-4xl text-midnight">Why North Pass Press?</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 text-center px-4">
+                <div class="flex flex-col items-center group cursor-default">
+                    <span
+                        class="text-5xl serif-heading text-slate-200 group-hover:text-gold transition-colors duration-500">I.</span>
+                    <h3 class="sans-label text-[9px] uppercase tracking-[0.2em] text-gold mb-3">The Text</h3>
+                    <p class="serif-heading text-xl text-midnight leading-relaxed max-w-[200px]">Clean, unabridged
+                        historical literature</p>
+                </div>
+                <div class="flex flex-col items-center group cursor-default">
+                    <span
+                        class="text-5xl serif-heading text-slate-200 group-hover:text-gold transition-colors duration-500">II.</span>
+                    <h3 class="sans-label text-[9px] uppercase tracking-[0.2em] text-gold mb-3">The Craft</h3>
+                    <p class="serif-heading text-xl text-midnight leading-relaxed max-w-[200px]">Rigorous typographic
+                        restoration</p>
+                </div>
+                <div class="flex flex-col items-center group cursor-default">
+                    <span
+                        class="text-5xl serif-heading text-slate-200 group-hover:text-gold transition-colors duration-500">III.</span>
+                    <h3 class="sans-label text-[9px] uppercase tracking-[0.2em] text-gold mb-3">The Source</h3>
+                    <p class="serif-heading text-xl text-midnight leading-relaxed max-w-[200px]">Faithful to the primary
+                        sources</p>
+                </div>
+                <div class="flex flex-col items-center group cursor-default">
+                    <span
+                        class="text-5xl serif-heading text-slate-200 group-hover:text-gold transition-colors duration-500">IV.</span>
+                    <h3 class="sans-label text-[9px] uppercase tracking-[0.2em] text-gold mb-3">The Purpose</h3>
+                    <p class="serif-heading text-xl text-midnight leading-relaxed max-w-[200px]">Recovered for the
+                        modern library</p>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <a href="about.html"
+                    class="inline-flex items-center gap-3 text-[10px] sans-label uppercase tracking-[0.2em] text-slate-500 hover:text-midnight transition-colors group">
+                    Read Our Story
+                    <span class="w-8 h-[1px] bg-slate-300 group-hover:bg-midnight transition-all"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="about" class="bg-midnight text-white pt-12 pb-6 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-white/10 pb-8 mb-6">
+            <div class="md:col-span-2">
+                <div class="flex items-center gap-4 mb-6">
+                    <img src="assets/images/spine%20logo.png" alt="North Pass Monogram"
+                        class="h-8 md:h-10 w-auto brightness-0 invert opacity-90">
+                    <span class="logo-main text-white mt-[1px]">North Pass Press</span>
+                </div>
+                <p class="text-white/60 text-sm leading-relaxed max-w-sm">
+                    Faithfully restoring historical English and Christian literature for modern readers.
+                </p>
+            </div>
+            <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div>
+                    <div class="h-8 md:h-10 flex items-center mb-3 pt-[2px]">
+                        <h4 class="sans-label text-xs uppercase tracking-widest">Explore</h4>
+                    </div>
+                    <ul class="text-sm space-y-1.5 text-white/60">
+                        <li><a href="about.html" class="hover:text-white">About</a></li>
+                        <li><a href="publications.html" class="hover:text-white">Books</a></li>
+                        <!-- <li><a href="craft.html" class="hover:text-white">The Craft</a></li> -->
+                        <li><a href="support.html" class="hover:text-white">Support</a></li>
+                        <li><a href="contact.html" class="hover:text-white">Inquiries</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="h-8 md:h-10 flex items-center mb-3 pt-[2px]">
+                        <h4 class="sans-label text-xs uppercase tracking-widest">Connect</h4>
+                    </div>
+                    <p class="text-sm text-white/60 mb-4">For inquiries or support, contact us at:</p>
+                    <div class="border border-white/20 p-3 sm:p-4 flex justify-between items-center gap-2">
+                        <span class="text-xs text-white/40 truncate" id="email-address">contact@northpasspress.com</span>
+                        <button class="text-white/40 shrink-0 hover:text-white transition-colors" onclick="copyEmail()"
+                            aria-label="Copy email address">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-[10px] text-white/30 uppercase tracking-[0.2em]">
+            <span>&copy; 2026 North Pass Press</span>
+            <span class="mt-4 md:mt-0"></span>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

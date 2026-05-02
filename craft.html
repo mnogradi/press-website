@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The Craft of North Pass Press. We combine precision digital typesetting with classical book design, offering professional services and Typst templates.">
+    <title>The Craft | North Pass Press</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/spine%20logo.png">
+    <link rel="apple-touch-icon" href="assets/images/spine%20logo.png">
+
+    <!-- Stylesheets -->
+    <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'midnight': '#10131A',
+                        'charcoal': '#1A1F2A',
+                        'slate': '#252D3A',
+                        'warm-white': '#F4F1EA',
+                        'ivory': '#EDE8DF',
+                        'gold': '#B8965A',
+                        'gold-light': '#D4B07A',
+                        'gold-faint': '#F0E8D6',
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Marcellus&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="overflow-x-hidden bg-[#f9f7f2]">
+
+    <!-- Navigation -->
+    <nav role="navigation" aria-label="Main navigation" class="bg-midnight border-b border-white/5">
+        <div class="container flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-4 group hover:opacity-80 transition-opacity">
+                <img src="assets/images/spine%20logo.png" alt="North Pass Monogram" class="h-10 md:h-12 w-auto brightness-0 invert opacity-90">
+                <span class="logo-main text-white mt-[1px]">North Pass Press</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="publications.html" class="nav-link">Store</a>
+                <a href="craft.html" class="nav-link active">The Craft</a>
+                <a href="support.html" class="nav-link">Support</a>
+                <a href="contact.html" class="nav-link nav-cta">Contact Us</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Mobile Overlay -->
+        <div class="mobile-overlay" id="mobile-overlay">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="publications.html" class="nav-link">Store</a>
+            <a href="craft.html" class="nav-link active">The Craft</a>
+            <a href="support.html" class="nav-link">Support</a>
+            <a href="contact.html" class="nav-link nav-cta mt-4 text-center">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Shop Header -->
+    <header class="relative bg-slate text-white pt-40 pb-24 px-6 overflow-hidden border-b border-white/5" style="background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); background-blend-mode: overlay;">
+        <div class="aurora-glow opacity-40"></div>
+        <div class="max-w-7xl mx-auto relative z-10 fade-in text-center">
+            <p class="sans-label text-white/50 mb-4 tracking-[0.2em] text-[11px] uppercase font-bold">The Workshop</p>
+            <h1 class="serif-heading text-4xl md:text-6xl mb-6">The Craft</h1>
+            <div class="w-24 h-px bg-white/20 mx-auto mb-8"></div>
+            <p class="text-xl text-white/80 max-w-2xl mx-auto font-light italic">
+                A convergence of historical design and modern performance through premium digital tools.
+            </p>
+        </div>
+    </header>
+
+    <!-- Digital Tools Section -->
+    <section class="py-24 px-6 bg-white min-h-[600px]">
+        <div class="max-w-7xl mx-auto">
+
+            <!-- Vertical grid of premium cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-12 max-w-7xl mx-auto mb-20">
+                
+                <!-- Template 1: The Poetry Book -->
+                <div class="book-item collection-card group cursor-pointer relative flex flex-col fade-in">
+                    <div class="aspect-[3/4] bg-[#fdfbf7] mb-6 relative overflow-hidden flex items-center justify-center transition-all duration-500">
+                        <div class="absolute top-0 right-0 bg-midnight text-white text-[9px] sans-label px-3 py-1.5 uppercase tracking-widest z-10 font-bold">Available</div>
+                        <!-- Virtual Cover Placeholder (Blueprint Style) -->
+                        <div class="w-[55%] h-[75%] bg-[#1a1c1e] shadow-2xl flex flex-col justify-between p-4 text-center border border-white/10 transform group-hover:scale-105 transition-transform duration-700">
+                            <span class="text-[7px] text-white/30 uppercase tracking-widest sans-label">Schema Edition</span>
+                            <div class="flex-grow flex items-center justify-center">
+                                <span class="text-white serif-heading text-[12px] leading-tight px-1 text-balance italic">Lyric & Verse</span>
+                            </div>
+                            <span class="text-[7px] text-white/30 italic">Poetry Template</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col flex-grow">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="sans-label text-[10px] text-[#C4A47C] font-bold uppercase tracking-widest">Premium Resource</span>
+                        </div>
+                        <h3 class="serif-heading text-xl mb-3 group-hover:text-[#C4A47C] transition-colors">The Poetry Book</h3>
+                        <p class="text-sm text-slate-500 line-clamp-2 mb-6">A specialized Typst layout for lyric wisdom. Optimized for verse indentation, stanza breaks, and delicate typography.</p>
+                        
+                        <div class="mt-auto">
+                            <a href="support.html" class="inline-flex items-center gap-2 text-[10px] sans-label font-bold uppercase tracking-[0.2em] text-midnight group/link">
+                                Get Template
+                                <span class="w-8 h-px bg-midnight group-hover/link:w-12 transition-all"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Template 2: The Gill Commentary -->
+                <div class="book-item collection-card group cursor-pointer relative flex flex-col fade-in">
+                    <div class="aspect-[3/4] bg-[#fdfbf7] mb-6 relative overflow-hidden flex items-center justify-center transition-all duration-500">
+                        <div class="absolute top-0 right-0 bg-slate-200 text-slate-600 text-[9px] sans-label px-3 py-1.5 uppercase tracking-widest z-10 font-bold">In Dev</div>
+                        <!-- Virtual Cover Placeholder (Academic Blueprint) -->
+                        <div class="w-[55%] h-[75%] bg-slate-100 shadow-2xl flex flex-col justify-between p-4 text-center border-l-4 border-midnight transform group-hover:scale-105 transition-transform duration-700">
+                            <span class="text-[7px] text-midnight/30 uppercase tracking-widest sans-label">Layout Framework</span>
+                            <div class="flex-grow flex items-center justify-center">
+                                <span class="text-midnight serif-heading text-[12px] leading-tight px-1 text-balance italic">Exposition Schema</span>
+                            </div>
+                            <span class="text-[7px] text-midnight/30 italic">Commentary Tool</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col flex-grow">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="sans-label text-[10px] text-[#C4A47C] font-bold uppercase tracking-widest">Scholarly Tool</span>
+                        </div>
+                        <h3 class="serif-heading text-xl mb-3 group-hover:text-[#C4A47C] transition-colors">The Gill Commentary</h3>
+                        <p class="text-sm text-slate-500 line-clamp-2 mb-6">A rigorous multi-column layout for complex works, inspired by 18th-century typesetting. Optimized for dense theological notation.</p>
+                        
+                        <div class="mt-auto">
+                            <a href="support.html" class="inline-flex items-center gap-2 text-[10px] sans-label font-bold uppercase tracking-[0.2em] text-slate-400 group/link">
+                                Join Waitlist
+                                <span class="w-8 h-px bg-slate-100 group-hover/link:w-12 transition-all"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Template 3: The Classics Reader -->
+                <div class="book-item collection-card group cursor-pointer relative flex flex-col fade-in">
+                    <div class="aspect-[3/4] bg-[#fdfbf7] mb-6 relative overflow-hidden flex items-center justify-center transition-all duration-500">
+                        <div class="absolute top-0 right-0 bg-midnight text-white text-[9px] sans-label px-3 py-1.5 uppercase tracking-widest z-10 font-bold">New</div>
+                        <!-- Virtual Cover Placeholder (Classic Blueprint) -->
+                        <div class="w-[55%] h-[75%] bg-[#f9f7f2] shadow-2xl flex flex-col justify-between p-4 text-center border border-slate-300 transform group-hover:scale-105 transition-transform duration-700">
+                            <div class="w-full h-px bg-slate-300"></div>
+                            <div class="flex-grow flex items-center justify-center">
+                                <span class="text-midnight serif-heading text-[12px] leading-tight px-1 text-balance">ProseReader</span>
+                            </div>
+                            <div class="w-full h-px bg-slate-300"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col flex-grow">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="sans-label text-[10px] text-[#C4A47C] font-bold uppercase tracking-widest">Academic Framework</span>
+                        </div>
+                        <h3 class="serif-heading text-xl mb-3 group-hover:text-[#C4A47C] transition-colors">The Classics Reader</h3>
+                        <p class="text-sm text-slate-500 line-clamp-2 mb-6">An elegant single-column framework for classical prose. Features expansive margins, tailored drop caps, and meticulous footnotes.</p>
+                        
+                        <div class="mt-auto">
+                            <a href="support.html" class="inline-flex items-center gap-2 text-[10px] sans-label font-bold uppercase tracking-[0.2em] text-midnight group/link">
+                                Get Template
+                                <span class="w-8 h-px bg-midnight group-hover/link:w-12 transition-all"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Improved Technology Section (3 Boxes) -->
+            <div class="max-w-6xl mx-auto py-12">
+                <div class="text-center mb-12">
+                    <span class="sans-label text-slate-400 block mb-2 uppercase tracking-[0.2em] text-[10px]">The Technology</span>
+                    <h3 class="serif-heading text-2xl italic">The Power of Typst</h3>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Performance Box -->
+                    <div class="bg-[#fcfaf7] border border-slate-100 p-10 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="text-2xl mb-6">⚡</div>
+                        <h4 class="sans-label text-[11px] mb-4 font-bold tracking-widest uppercase">Performance</h4>
+                        <p class="text-slate-600 text-[13px] leading-relaxed font-light">
+                            Rust-powered compilation for document rendering in milliseconds. No more waiting for LaTeX builds.
+                        </p>
+                    </div>
+                    
+                    <!-- Precision Box -->
+                    <div class="bg-[#fcfaf7] border border-slate-100 p-10 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="text-2xl mb-6">📐</div>
+                        <h4 class="sans-label text-[11px] mb-4 font-bold tracking-widest uppercase">Precision</h4>
+                        <p class="text-slate-600 text-[13px] leading-relaxed font-light">
+                            Superior kerning, paragraph justification, and math typesetting out of the box for a professional finish.
+                        </p>
+                    </div>
+                    
+                    <!-- Agility Box -->
+                    <div class="bg-[#fcfaf7] border border-slate-100 p-10 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="text-2xl mb-6">🔧</div>
+                        <h4 class="sans-label text-[11px] mb-4 font-bold tracking-widest uppercase">Agility</h4>
+                        <p class="text-slate-600 text-[13px] leading-relaxed font-light">
+                            A modern syntax that replaces the complexity of LaTeX, allowing for flexible scripting and automation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bespoke Production Section -->
+    <section class="py-32 px-6 bg-[#f0f0f0] border-t border-slate-200">
+        <div class="max-w-7xl mx-auto">
+            <div class="max-w-4xl mx-auto text-center">
+                <span class="sans-label text-slate-400 block mb-4 uppercase tracking-widest text-[10px]">Commissioned Services</span>
+                <h2 class="serif-heading text-3xl md:text-5xl text-midnight mb-8 italic">A Commissioned Standard</h2>
+                <p class="text-slate-600 text-lg leading-relaxed mb-12 max-w-2xl mx-auto font-light italic">
+                    For those who require the architectural rigor of classical typesetting for their own projects. 
+                    We offer specialized production services for historical treatises, academic resumes, and private collections.
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-12 mb-16 text-center border-y border-slate-200 py-12">
+                    <div>
+                        <h3 class="serif-heading text-xl text-midnight mb-4">Interior Design</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">Exquisite micro-typography and layout for long-form manuscripts.</p>
+                    </div>
+                    <div>
+                        <h3 class="serif-heading text-xl text-midnight mb-4">Academic Form</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">Rigorous formatting for doctrinal works and curriculum drafting.</p>
+                    </div>
+                    <div>
+                        <h3 class="serif-heading text-xl text-midnight mb-4">Private Editions</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">Commemorative collections and poetry anthologies rendered with fidelity.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white border border-slate-200 p-12 shadow-sm inline-block w-full max-w-2xl">
+                    <p class="serif-heading text-xl text-midnight mb-6 italic">Envisioning a specific project?</p>
+                    <p class="text-slate-600 mb-10 text-sm leading-relaxed font-light italic">
+                        We apply the same typographic rigor to your commission as we do to the official volumes of North Pass Press. Let us discuss the requirements of your manuscript.
+                    </p>
+                    <a href="contact.html" class="inline-block bg-[#d4b26a] text-white px-12 py-4 sans-label text-xs font-bold hover:bg-[#f0e6d2] hover:text-midnight transition duration-300">
+                        Inquire regarding production &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-midnight text-white pt-12 pb-6 px-6 border-t border-white/10">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 border-b border-white/10 pb-8 mb-6">
+            <div class="md:col-span-2">
+                <div class="flex items-center gap-4 mb-6">
+                    <img src="assets/images/spine%20logo.png" alt="North Pass Monogram" class="h-8 md:h-10 w-auto brightness-0 invert opacity-90">
+                    <span class="logo-main text-white mt-[1px]">North Pass Press</span>
+                </div>
+                <p class="text-white/60 text-sm leading-relaxed max-w-sm">
+                    Recovering historical English and Christian literature through faithful modern editions.
+                </p>
+            </div>
+            <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div>
+                    <div class="h-8 md:h-10 flex items-center mb-3 pt-[2px]">
+                        <h4 class="sans-label text-xs uppercase tracking-widest">Explore</h4>
+                    </div>
+                    <ul class="text-sm space-y-1.5 text-white/60">
+                        <li><a href="about.html" class="hover:text-white">About</a></li>
+                        <li><a href="publications.html" class="hover:text-white">Store</a></li>
+                        <!-- <li><a href="craft.html" class="hover:text-white">The Craft</a></li> -->
+                        <li><a href="support.html" class="hover:text-white">Support</a></li>
+                        <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="h-8 md:h-10 flex items-center mb-3 pt-[2px]">
+                        <h4 class="sans-label text-xs uppercase tracking-widest">Connect</h4>
+                    </div>
+                    <p class="text-sm text-white/60 mb-4">For inquiries or support, contact us at:</p>
+                    <div class="border border-white/20 p-4 flex justify-between items-center">
+                        <span class="text-xs text-white/40" id="email-address">contact@northpasspress.com</span>
+                        <button onclick="copyEmail()" class="text-white/40 text-[10px] font-bold hover:text-white transition-colors uppercase tracking-widest">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-[10px] text-white/30 uppercase tracking-[0.2em]">
+            <span>&copy; 2026 North Pass Press</span>
+            <span class="mt-4 md:mt-0">A Partner of The Ember Guild</span>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Book for Boys and Girls | North Pass Press</title>
+    <meta name="description"
+        content="John Bunyan's A Book for Boys and Girls. A precision-typeset edition by North Pass Press.">
+    <link rel="icon" type="image/png" href="assets/images/spine%20logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'midnight': '#10131A',
+                        'charcoal': '#1A1F2A',
+                        'slate': '#252D3A',
+                        'warm-white': '#F4F1EA',
+                        'ivory': '#EDE8DF',
+                        'gold': '#B8965A',
+                        'gold-light': '#D4B07A',
+                        'gold-faint': '#F0E8D6',
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Marcellus&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <style>
+        .book-hero {
+            background-color: var(--slate);
+            background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+            background-blend-mode: overlay;
+        }
+    </style>
+</head>
+
+<body class="bg-warm-white text-midnight">
+
+    <!-- Navigation -->
+    <nav role="navigation" aria-label="Main navigation" class="bg-midnight border-b border-white/5">
+        <div class="container flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-4 group hover:opacity-80 transition-opacity">
+                <img src="assets/images/spine%20logo.png" alt="North Pass Monogram"
+                    class="h-10 md:h-12 w-auto brightness-0 invert opacity-90">
+                <span class="logo-main text-white mt-[1px]">North Pass Press</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="publications.html" class="nav-link active">Books</a>
+                <!-- <a href="craft.html" class="nav-link">The Craft</a> -->
+                <a href="support.html" class="nav-link">Support</a>
+                <a href="contact.html" class="nav-link nav-cta">Inquire</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Mobile Overlay -->
+        <div class="mobile-overlay" id="mobile-overlay">
+            <button id="mobile-close-btn" aria-label="Close menu"
+                style="position:absolute;top:28px;right:32px;background:none;border:none;cursor:pointer;color:white;font-size:1.5rem;line-height:1;opacity:0.7;"
+                onmouseenter="this.style.opacity='1'" onmouseleave="this.style.opacity='0.7'">✕</button>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="publications.html" class="nav-link active">Books</a>
+            <!-- <a href="craft.html" class="nav-link">The Craft</a> -->
+            <a href="support.html" class="nav-link">Support</a>
+            <a href="contact.html" class="nav-link nav-cta mt-4 text-center">Inquire</a>
+        </div>
+    </nav>
+
+    <!-- Book Hero -->
+    <header class="book-hero pt-32 pb-24 border-b border-white/10 relative overflow-hidden">
+        <div class="aurora-glow"></div>
+        <div class="container relative z-10">
+            <div class="grid lg:grid-cols-12 gap-16 items-center">
+                <!-- Cover Image -->
+                <div class="lg:col-span-5 flex justify-center fade-in">
+                    <img src="assets/images/bunyanimg.png" alt="A Book for Boys and Girls"
+                        class="max-w-full h-auto max-h-[500px] object-contain shadow-deep hover:scale-105 transition-transform duration-500">
+                </div>
+
+                <!-- Book Info -->
+                <div class="lg:col-span-7 text-white fade-in-delay">
+                    <span class="sans-label text-gold block mb-4">Puritan Verse</span>
+                    <h1 class="serif-heading text-4xl md:text-6xl mb-4 leading-tight">A Book for Boys and Girls</h1>
+                    <h2 class="serif-heading text-2xl text-white/60 italic mb-8">
+                        By John Bunyan, <span class="text-white/40 text-xl font-light not-italic">author of <i>Pilgrim's
+                                Progress</i></span>
+                    </h2>
+
+                    <p class="text-lg text-white/70 font-light leading-relaxed mb-10 max-w-2xl">
+                        This restored edition presents Bunyan's ingenious verses, where common things become emblems of
+                        divine truth for children, families, and readers of all ages.</p>
+
+                    <div class="flex gap-4">
+                        <!-- <button
+                            class="bg-gold text-midnight px-8 py-4 sans-label font-bold hover:bg-gold-light transition-all uppercase tracking-widest text-xs">
+                            Purchase Print Edition ($8.99)
+                        </button> -->
+                        <a href="#preview"
+                            class="border border-white/20 text-white px-8 py-4 sans-label hover:bg-white/5 transition-all uppercase tracking-widest text-xs flex items-center">
+                            Read Preview
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Details Section -->
+    <section class="py-20 px-6 bg-ivory">
+        <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-12">
+            <div class="md:col-span-2">
+                <h3 class="serif-heading text-2xl mb-6">About the Edition</h3>
+                <div class="prose prose-slate font-light leading-loose text-slate">
+                    <p class="mb-4">
+                        First published in 1686, <em>A Book for Boys and Girls</em>—later known as Divine Emblems—is
+                        John Bunyan’s ingenious attempt to “play the fool” in order to win the souls of children and the
+                        “childish” alike.
+                    </p>
+                    <p class="mb-4">
+                        For over three centuries, most editions of this work have been heavily abridged, often omitting
+                        more than half of Bunyan’s original verses. This North Pass Press edition restores the 1686
+                        original in its entirety, presenting the first modern retypesetting of the unabridged text. From
+                        the “Egg” and the “Frog” to the “Swallow” and the “Bee,” these “divine emblems” are designed to
+                        hit the mark when graver thunderbolts miss their target.
+                    </p>
+                    <p>
+                        Including Bunyan’s charming <i>Help to Children to Learn to Read English</i>, this edition is a
+                        comprehensive restoration of a spiritual and literary masterpiece disguised as a children's
+                        book—a book for those who are "at their hornbook," and for anyone who wishes to see great truths
+                        shine through little things.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-warm-white border border-slate/10 p-8">
+                <h4 class="sans-label text-slate mb-6 border-b border-slate/10 pb-2">Specifications</h4>
+                <ul class="space-y-4 text-sm font-light text-charcoal">
+                    <li class="flex justify-between gap-4">
+                        <strong class="font-normal text-slate/70">Format</strong>
+                        <span class="text-right">Paperback Perfect Bound</span>
+                    </li>
+                    <li class="flex justify-between gap-4">
+                        <strong class="font-normal text-slate/70">Pages</strong>
+                        <span class="text-right">95</span>
+                    </li>
+                    <li class="flex justify-between gap-4">
+                        <strong class="font-normal text-slate/70">Trim Size</strong>
+                        <span class="text-right">Pocket Book (4.25" x 6.875")</span>
+                    </li>
+                    <li class="flex justify-between gap-4">
+                        <strong class="font-normal text-slate/70">Interior</strong>
+                        <span class="text-right">B&W, 60# Cream Uncoated</span>
+                    </li>
+                    <li class="flex justify-between gap-4">
+                        <strong class="font-normal text-slate/70">Cover</strong>
+                        <span class="text-right">Matte Finish</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PDF Preview -->
+    <section id="preview" class="py-20 px-6 bg-white border-t border-ivory">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="sans-label text-slate">Look Inside</span>
+                <h2 class="serif-heading text-3xl mt-2">Typesetting Preview</h2>
+            </div>
+
+            <div class="bg-warm-white p-4 border border-ivory shadow-card">
+                <iframe src="assets/docs/bunyan-book.pdf" width="100%" height="800px" style="border:none;"
+                    title="Book Preview"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="about" class="bg-midnight text-white pt-12 pb-6 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-white/10 pb-8 mb-6">
+            <div class="md:col-span-2">
+                <div class="flex items-center gap-4 mb-6">
+                    <img src="assets/images/spine%20logo.png" alt="North Pass Monogram"
+                        class="h-8 md:h-10 w-auto brightness-0 invert opacity-90">
+                    <span class="logo-main text-white mt-[1px]">North Pass Press</span>
+                </div>
+                <p class="text-white/60 text-sm leading-relaxed max-w-sm">
+                    North Pass Press is dedicated to the typographic restoration of historical English and Christian
+                    literature.
+                    From lyric poetry to the primary sources of the Reformed tradition, we provide clean, unabridged
+                    editions recovered and restored for the modern library.
+                </p>
+            </div>
+            <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div>
+                    <div class="h-8 md:h-10 flex items-center mb-3 pt-[2px]">
+                        <h4 class="sans-label text-xs uppercase tracking-widest">Explore</h4>
+                    </div>
+                    <ul class="text-sm space-y-1.5 text-white/60">
+                        <li><a href="about.html" class="hover:text-white">About</a></li>
+                        <li><a href="publications.html" class="hover:text-white">Books</a></li>
+                        <!-- <li><a href="craft.html" class="hover:text-white">The Craft</a></li> -->
+                        <li><a href="support.html" class="hover:text-white">Support</a></li>
+                        <li><a href="contact.html" class="hover:text-white">Inquiries</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="h-8 md:h-10 flex items-center mb-3 pt-[2px]">
+                        <h4 class="sans-label text-xs uppercase tracking-widest">Connect</h4>
+                    </div>
+                    <p class="text-sm text-white/60 mb-4">For inquiries or support, contact us at:</p>
+                    <div class="border border-white/20 p-3 sm:p-4 flex justify-between items-center gap-2">
+                        <span class="text-xs text-white/40 truncate" id="email-address">contact@northpasspress.com</span>
+                        <button class="text-white/40 shrink-0 hover:text-white transition-colors" onclick="copyEmail()"
+                            aria-label="Copy email address">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-[10px] text-white/30 uppercase tracking-[0.2em]">
+            <span>&copy; 2026 North Pass Press</span>
+            <span class="mt-4 md:mt-0"></span>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
