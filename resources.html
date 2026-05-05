@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="North Pass Press — Typographic restoration of historical English and Christian literature. Providing clean, unabridged editions recovered for the modern library.">
-    <title>About Us | North Pass Press</title>
+        content="Free Resources | North Pass Press. Download historical catechisms, primers, and study materials restored for the modern library.">
+    <title>Free Resources | North Pass Press</title>
     <link rel="icon" type="image/png" href="assets/images/spine%20logo.png">
     <link rel="apple-touch-icon" href="assets/images/spine%20logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
-        <script>
+    <script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -40,15 +40,16 @@
     <nav role="navigation" aria-label="Main navigation" class="bg-midnight border-b border-white/5">
         <div class="container flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-4 group hover:opacity-80 transition-opacity">
-                <img src="assets/images/spine%20logo.png" alt="North Pass Monogram" class="h-10 md:h-12 w-auto brightness-0 invert opacity-90">
+                <img src="assets/images/spine%20logo.png" alt="North Pass Monogram"
+                    class="h-10 md:h-12 w-auto brightness-0 invert opacity-90">
                 <span class="logo-main text-white mt-[1px]">North Pass Press</span>
             </a>
-            
+
             <div class="nav-links">
                 <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link active">About</a>
+                <a href="about.html" class="nav-link">About</a>
                 <a href="publications.html" class="nav-link">Books</a>
-                <a href="resources.html" class="nav-link">Resources</a>
+                <a href="resources.html" class="nav-link active">Resources</a>
                 <a href="templates.html" class="nav-link">Templates</a>
                 <a href="contact.html" class="nav-link nav-cta">Contact Us</a>
             </div>
@@ -67,87 +68,70 @@
                 style="position:absolute;top:28px;right:32px;background:none;border:none;cursor:pointer;color:white;font-size:1.5rem;line-height:1;opacity:0.7;"
                 onmouseenter="this.style.opacity='1'" onmouseleave="this.style.opacity='0.7'">✕</button>
             <a href="index.html" class="nav-link">Home</a>
-            <a href="about.html" class="nav-link active">About</a>
+            <a href="about.html" class="nav-link">About</a>
             <a href="publications.html" class="nav-link">Books</a>
-            <a href="resources.html" class="nav-link">Resources</a>
+            <a href="resources.html" class="nav-link active">Resources</a>
             <a href="templates.html" class="nav-link">Templates</a>
             <a href="contact.html" class="nav-link nav-cta mt-4 text-center">Contact Us</a>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <header class="relative bg-slate text-white pt-40 pb-20 px-6 overflow-hidden text-center" style="background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); background-blend-mode: overlay;">
+    <!-- Header -->
+    <header class="relative bg-slate text-white pt-40 pb-20 px-6 overflow-hidden border-b border-white/5"
+        style="background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); background-blend-mode: overlay;">
         <div class="aurora-glow opacity-40"></div>
-        <div class="max-w-7xl mx-auto relative z-10 fade-in">
-            <p class="sans-label text-white/60 mb-4 tracking-[0.2em]">Our Story</p>
-            <h1 class="serif-heading text-4xl md:text-6xl">North Pass Press</h1>
+        <div class="max-w-7xl mx-auto relative z-10 fade-in text-center">
+            <p class="sans-label text-white/50 mb-4 tracking-[0.2em] text-[11px] uppercase font-bold">Resources</p>
+            <h1 class="serif-heading text-4xl md:text-6xl">Free Downloads</h1>
+            
         </div>
     </header>
 
-    <section class="pt-24 pb-12 px-6 bg-white">
-        <div class="max-w-3xl mx-auto">
-            <div class="mb-12 border-l-2 border-slate-200 pl-6">
-                <span class="sans-label text-slate-500 block mb-2">Our Mission</span>
-                <h2 class="serif-heading text-3xl text-midnight">To the Modern Reader</h2>
-            </div>
+    <!-- Resources Grid -->
+    <section class="py-20 px-6 bg-[#EDE8DF] min-h-[600px]">
+        <div class="max-w-4xl mx-auto">
+            <div id="resources-grid" class="grid grid-cols-1 md:grid-cols-2 gap-10 transition-all duration-500">
 
-            <div class="space-y-6 text-slate-700 text-lg leading-relaxed font-light">
-                <p>
-                    North Pass Press is an independent publishing house primarily dedicated to the restoration of historical texts. We believe that the voices of the English and Reformed traditions are not mere relics, but living works intended for the modern library.
-
-                </p>
-
-                <p>
-                    Our work focuses on the recovery of forgotten, lost, and - perhaps - even ignored historical texts, including everything from the writings of the 17th century to the expansive breadth of English poetry. By providing editions that are newly re-typeset and unabridged, we aim to respect both the integrity of the source and the needs of the modern reader.
-                </p>
-
-                <p>
-                    Our mission is to provide bibliophiles of all ages with meticulously curated editions 
-                    that honor both content and craftsmanship, bridging the foundations of heritage 
-                    with the standards of modern typography.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pillars Section -->
-    <section class="pb-24 pt-12 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Rigor -->
-                <div class="bg-[#fdfbf7] p-8 border border-slate-100 rounded-xl hover:shadow-lg transition-all duration-300 group">
-                    <h3 class="serif-heading text-xl mb-4 text-midnight group-hover:text-slate-600 transition-colors">
-                        Historical Restoration</h3>
-                    <p class="text-slate-600 leading-relaxed text-sm">
-                        The Press specializes in the recovery of historical literature. All of our publications are given careful and detailed consideration, as we strive to accurately preserve the original text. 
+                <!-- Resource 1: Stinton Catechism -->
+                <div class="resource-item group bg-white border border-slate-100 shadow-sm hover:border-slate-200 hover:shadow-md transition-all duration-300 p-8 flex flex-col">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="sans-label text-[10px] text-gold font-bold uppercase tracking-widest">Catechism</span>
+                        <span class="sans-label text-[9px] text-slate-400 font-bold uppercase tracking-widest">PDF Edition</span>
+                    </div>
+                    
+                    <h3 class="serif-heading text-2xl mb-4 group-hover:text-[#C4A47C] transition-colors">A Short Catechism</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-8 font-light">
+                        By Benjamin Stinton, a Particular Baptist minister.<br>
+                        <br>This concise 18th-century text presents the fundamentals of the Christian faith in simple question-and-answer form, drawn directly from Scripture. Newly retypeset for clarity and prepared for use in the home, church, or personal devotion.
                     </p>
+
+                    <div class="mt-auto pt-6 border-t border-slate-50">
+                        <a href="assets/docs/stinton-catechism.pdf" download onclick="if(typeof gtag === 'function') gtag('event', 'download', {'event_category': 'PDF', 'event_label': 'Stinton Catechism'});" class="inline-flex items-center gap-3 bg-midnight text-white px-6 py-3 sans-label text-[11px] uppercase tracking-widest font-bold hover:bg-gold transition-colors duration-300 w-full justify-center">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            Download PDF
+                        </a>
+                    </div>
                 </div>
 
-                <div class="bg-[#fdfbf7] p-8 border border-slate-100 rounded-xl hover:shadow-lg transition-all duration-300 group">
-                    <h3 class="serif-heading text-xl mb-4 text-midnight group-hover:text-slate-600 transition-colors">
-                        Typographic Design</h3>
-                    <p class="text-slate-600 leading-relaxed text-sm">
-                        The Press is dedicated to ensuring that every volume is clear, intentional, and faithful to its source. We utilize professional typesetting and manual layout to create editions that are both beautiful and accessible.
-                    </p>
+                <!-- Placeholder for future resources -->
+                <div class="border-2 border-dashed border-slate-200 p-8 flex flex-col items-center justify-center text-center opacity-50 group">
+                    <div class="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center mb-4 group-hover:border-gold transition-colors">
+                        <svg class="w-6 h-6 text-slate-300 group-hover:text-gold transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+                    </div>
+                    <span class="sans-label text-[10px] uppercase tracking-widest text-slate-400">More Coming Soon</span>
                 </div>
 
-                <div class="bg-[#fdfbf7] p-8 border border-slate-100 rounded-xl hover:shadow-lg transition-all duration-300 group">
-                    <h3 class="serif-heading text-xl mb-4 text-midnight group-hover:text-slate-600 transition-colors">
-                        Primary Sources</h3>
-                    <p class="text-slate-600 leading-relaxed text-sm">
-                        We are committed to maintaining the integrity of the primary sources. These texts are chosen with care, and are intended to provide a direct connection to the forgotten works of the past.
-                    </p>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-midnight text-white pt-12 pb-6 px-6 border-t border-white/10">
+    <footer id="about" class="bg-midnight text-white pt-12 pb-6 px-6">
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-white/10 pb-8 mb-6">
             <div class="md:col-span-2">
                 <div class="flex items-center gap-4 mb-6">
-                    <img src="assets/images/spine%20logo.png" alt="North Pass Monogram" class="h-8 md:h-10 w-auto brightness-0 invert opacity-90">
+                    <img src="assets/images/spine%20logo.png" alt="North Pass Monogram"
+                        class="h-8 md:h-10 w-auto brightness-0 invert opacity-90">
                     <span class="logo-main text-white mt-[1px]">North Pass Press</span>
                 </div>
                 <p class="text-white/60 text-sm leading-relaxed max-w-sm">
@@ -174,7 +158,8 @@
                     <p class="text-sm text-white/60 mb-4">For inquiries or support, contact us at:</p>
                     <div class="border border-white/20 p-3 sm:p-4 flex justify-between items-center gap-2">
                         <span class="text-xs text-white/40 truncate" id="email-address">contact@northpasspress.com</span>
-                        <button onclick="copyEmail()" class="text-white/40 shrink-0 text-[10px] font-bold hover:text-white transition-colors uppercase tracking-widest">Copy</button>
+                        <button class="text-white/40 shrink-0 hover:text-white transition-colors" onclick="copyEmail()"
+                            aria-label="Copy email address">Copy</button>
                     </div>
                 </div>
             </div>
