@@ -39,19 +39,19 @@
     <!-- Navigation -->
     <nav role="navigation" aria-label="Main navigation" class="bg-midnight border-b border-white/5">
         <div class="container flex items-center justify-between">
-            <a href="index.html" class="flex items-center gap-4 group hover:opacity-80 transition-opacity">
+            <a href="/" class="flex items-center gap-4 group hover:opacity-80 transition-opacity">
                 <img src="assets/images/spine%20logo.png" alt="North Pass Monogram"
                     class="h-10 md:h-12 w-auto brightness-0 invert opacity-90">
                 <span class="logo-main text-white mt-[1px]">North Pass Press</span>
             </a>
 
             <div class="nav-links">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="publications.html" class="nav-link">Books</a>
-                <a href="resources.html" class="nav-link active">Resources</a>
-                <a href="templates.html" class="nav-link">Templates</a>
-                <a href="contact.html" class="nav-link nav-cta">Contact Us</a>
+                <a href="/" class="nav-link">Home</a>
+                <a href="about" class="nav-link">About</a>
+                <a href="publications" class="nav-link">Books</a>
+                <a href="resources" class="nav-link active">Resources</a>
+                <a href="templates" class="nav-link">Templates</a>
+                <a href="contact" class="nav-link nav-cta">Contact Us</a>
             </div>
 
             <!-- Mobile Menu Toggle -->
@@ -67,12 +67,12 @@
             <button id="mobile-close-btn" aria-label="Close menu"
                 style="position:absolute;top:28px;right:32px;background:none;border:none;cursor:pointer;color:white;font-size:1.5rem;line-height:1;opacity:0.7;"
                 onmouseenter="this.style.opacity='1'" onmouseleave="this.style.opacity='0.7'">✕</button>
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="about.html" class="nav-link">About</a>
-            <a href="publications.html" class="nav-link">Books</a>
-            <a href="resources.html" class="nav-link active">Resources</a>
-            <a href="templates.html" class="nav-link">Templates</a>
-            <a href="contact.html" class="nav-link nav-cta mt-4 text-center">Contact Us</a>
+            <a href="/" class="nav-link">Home</a>
+            <a href="about" class="nav-link">About</a>
+            <a href="publications" class="nav-link">Books</a>
+            <a href="resources" class="nav-link active">Resources</a>
+            <a href="templates" class="nav-link">Templates</a>
+            <a href="contact" class="nav-link nav-cta mt-4 text-center">Contact Us</a>
         </div>
     </nav>
 
@@ -113,12 +113,25 @@
                     </div>
                 </div>
 
-                <!-- Placeholder for future resources -->
-                <div class="border-2 border-dashed border-slate-200 p-8 flex flex-col items-center justify-center text-center opacity-50 group">
-                    <div class="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center mb-4 group-hover:border-gold transition-colors">
-                        <svg class="w-6 h-6 text-slate-300 group-hover:text-gold transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+                <!-- Resource 2: Bunyan on Parenting -->
+                <div class="resource-item group bg-white border border-slate-100 shadow-sm hover:border-slate-200 hover:shadow-md transition-all duration-300 p-8 flex flex-col">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="sans-label text-[10px] text-gold font-bold uppercase tracking-widest">Doctrinal</span>
+                        <span class="sans-label text-[9px] text-slate-400 font-bold uppercase tracking-widest">PDF Edition</span>
                     </div>
-                    <span class="sans-label text-[10px] uppercase tracking-widest text-slate-400">More Coming Soon</span>
+                    
+                    <h3 class="serif-heading text-2xl mb-4 group-hover:text-[#C4A47C] transition-colors">The Duties of Parents and Children</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-8 font-light">
+                        By John Bunyan, author of *The Pilgrim's Progress*.<br>
+                        <br>Extracted from Bunyan's *Christian Behavior*, this practical guide outlines the scriptural duties of parents toward their children—focusing on instruction and correction—and the reciprocal honor and obedience children owe to their parents.
+                    </p>
+
+                    <div class="mt-auto pt-6 border-t border-slate-50">
+                        <a href="assets/docs/bunyan-parents.pdf" download onclick="if(typeof gtag === 'function') gtag('event', 'download', {'event_category': 'PDF', 'event_label': 'Bunyan on Parenting'});" class="inline-flex items-center gap-3 bg-midnight text-white px-6 py-3 sans-label text-[11px] uppercase tracking-widest font-bold hover:bg-gold transition-colors duration-300 w-full justify-center">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            Download PDF
+                        </a>
+                    </div>
                 </div>
 
             </div>
@@ -201,11 +214,11 @@
                         <h4 class="sans-label text-xs uppercase tracking-widest">Explore</h4>
                     </div>
                     <ul class="text-sm space-y-1.5 text-white/60">
-                        <li><a href="about.html" class="hover:text-white">About</a></li>
-                        <li><a href="publications.html" class="hover:text-white">Books</a></li>
-                        <li><a href="resources.html" class="hover:text-white">Resources</a></li>
-                        <li><a href="templates.html" class="hover:text-white">Templates</a></li>
-                        <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+                        <li><a href="about" class="hover:text-white">About</a></li>
+                        <li><a href="publications" class="hover:text-white">Books</a></li>
+                        <li><a href="resources" class="hover:text-white">Resources</a></li>
+                        <li><a href="templates" class="hover:text-white">Templates</a></li>
+                        <li><a href="contact" class="hover:text-white">Contact Us</a></li>
                     </ul>
                 </div>
                 <div>
