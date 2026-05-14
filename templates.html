@@ -295,7 +295,7 @@
                     <div class="border border-white/20 p-3 sm:p-4 flex justify-between items-center gap-2">
                         <span class="text-xs text-white/40 truncate"
                             id="email-address">contact@northpass.press</span>
-                        <button class="text-white/40 shrink-0 hover:text-white transition-colors" onclick="copyEmail()"
+                        <button class="text-white/40 shrink-0 hover:text-white transition-colors" onclick="copyEmail(); posthog.capture('email_copied', { source: 'Footer' });"
                             aria-label="Copy email address">Copy</button>
                     </div>
                 </div>

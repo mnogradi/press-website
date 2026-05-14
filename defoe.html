@@ -121,7 +121,9 @@
                         <!-- <button class="bg-gold text-midnight px-8 py-4 sans-label font-bold hover:bg-gold-light transition-all uppercase tracking-widest text-xs">
                             Purchase Print Edition ($18.99)
                         </button> -->
-                        <a href="#preview" class="border border-white/20 text-white px-8 py-4 sans-label hover:bg-white/5 transition-all uppercase tracking-widest text-xs flex items-center">
+                        <a href="#preview" 
+                           onclick="posthog.capture('preview_clicked', { book: 'Defoe - The Storm', source: 'Hero Button' });"
+                           class="border border-white/20 text-white px-8 py-4 sans-label hover:bg-white/5 transition-all uppercase tracking-widest text-xs flex items-center">
                             Read Preview
                         </a>
                     </div>
@@ -232,7 +234,7 @@
                     <p class="text-sm text-white/60 mb-4">For inquiries or support, contact us at:</p>
                     <div class="border border-white/20 p-3 sm:p-4 flex justify-between items-center gap-2">
                         <span class="text-xs text-white/40 truncate" id="email-address">contact@northpass.press</span>
-                        <button class="text-white/40 shrink-0 hover:text-white transition-colors" onclick="copyEmail()" aria-label="Copy email address">Copy</button>
+                        <button class="text-white/40 shrink-0 hover:text-white transition-colors" onclick="copyEmail(); posthog.capture('email_copied', { source: 'Footer' });" aria-label="Copy email address">Copy</button>
                     </div>
                 </div>
             </div>
