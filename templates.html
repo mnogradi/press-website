@@ -7,6 +7,21 @@
     <meta name="description"
         content="Professional Typst templates by North Pass Press. We combine precision digital typesetting with classical book design for modern authors and researchers.">
     <title>Templates | North Pass Press</title>
+    <link rel="canonical" href="https://northpass.press/templates">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Templates | North Pass Press">
+    <meta property="og:description" content="Professional Typst templates by North Pass Press — combining precision digital typesetting with classical book design for modern authors and researchers.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://northpass.press/templates">
+    <meta property="og:image" content="https://northpass.press/assets/images/spine%20logo.png">
+    <meta property="og:site_name" content="North Pass Press">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Templates | North Pass Press">
+    <meta name="twitter:description" content="Professional Typst templates by North Pass Press — combining precision digital typesetting with classical book design for modern authors and researchers.">
+    <meta name="twitter:image" content="https://northpass.press/assets/images/spine%20logo.png">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/spine%20logo.png">
@@ -104,43 +119,40 @@
     <section class="py-24 px-6 bg-[#EDE8DF] min-h-[600px]">
         <div class="max-w-7xl mx-auto">
 
-            <!-- Vertical grid of premium cards -->
-            <div class="max-w-sm mx-auto mb-20">
-                <!-- Template 1: The Classics Reader (Free) 
-                <div class="book-item group relative flex flex-col fade-in bg-white border border-slate-100 shadow-sm hover:border-slate-200 hover:shadow-md transition-all duration-300 p-6">
-                    <div class="aspect-[13/14] bg-[#f9f7f2] mb-6 relative overflow-hidden flex items-center justify-center transition-all duration-500">
-                        <div class="absolute top-0 right-0 bg-midnight text-white text-[9px] sans-label px-3 py-1.5 uppercase tracking-widest z-10 font-bold">Free</div>
+            <!-- Grid of premium cards -->
+            <div class="flex flex-col md:flex-row justify-center gap-10 mb-20">
+                
+                <!-- Template 1: Modern Short Story (Free) -->
+                <div class="book-item group relative flex flex-col fade-in bg-white border border-slate-100 shadow-sm hover:border-slate-200 hover:shadow-md transition-all duration-300 max-w-sm w-full">
+                    <div class="p-6 pb-0">
+                        <div class="aspect-[13/14] bg-[#f9f7f2] mb-6 relative overflow-hidden flex items-center justify-center transition-all duration-500">
+                            <div class="absolute top-0 right-0 bg-midnight text-white text-[9px] sans-label px-3 py-1.5 uppercase tracking-widest z-10 font-bold">Free</div>
+                            <img src="assets/images/free-story.png" alt="Modern Short Story Template" class="h-[85%] w-auto transform group-hover:scale-105 transition-transform duration-700 pointer-events-none object-contain">
+                        </div>
                         
-                        <div class="h-[85%] aspect-[13/18] bg-white shadow-2xl flex flex-col justify-between p-4 text-center border border-slate-200 transform group-hover:scale-105 transition-transform duration-700">
-                            <div class="w-8 h-px bg-slate-300 mx-auto"></div>
-                            <div class="flex-grow flex items-center justify-center">
-                                <span class="text-midnight serif-heading text-[11px] leading-tight px-1 text-balance">The Classics <br><span class="italic text-slate-400">Reader</span></span>
+                        <div class="flex flex-col mb-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <span class="sans-label text-[10px] text-slate font-bold uppercase tracking-widest">Literary Fiction</span>
                             </div>
-                            <div class="w-8 h-px bg-slate-300 mx-auto"></div>
+                            <h3 class="serif-heading text-2xl mb-2 group-hover:text-[#C4A47C] transition-colors">Modern Short Story</h3>
+                            <p class="text-sm text-slate-400 line-clamp-3">A sleek, editorial-grade template for short stories. Features automated scene breaks, em-dashes, and smallcaps shorthand.</p>
                         </div>
                     </div>
                     
-                    <div class="flex flex-col flex-grow">
-                        <div class="flex justify-between items-start mb-2">
-                            <span class="sans-label text-[10px] text-slate font-bold uppercase tracking-widest">Academic Framework</span>
-                        </div>
-                        <h3 class="serif-heading text-2xl mb-2 group-hover:text-[#C4A47C] transition-colors">The Classics Reader</h3>
-                        <p class="text-sm text-slate-400 line-clamp-3 mb-4">An elegant single-column framework for classical prose. Features expansive margins, tailored drop caps, and meticulous footnotes.</p>
-                        
-                        <div class="mt-auto">
-                            <a href="resources" class="inline-flex items-center gap-2 text-[10px] sans-label font-bold uppercase tracking-[0.2em] text-midnight group/link">
-                                Download Now
-                                <span class="w-8 h-px bg-midnight group-hover/link:w-12 transition-all"></span>
-                            </a>
-                        </div>
+                    <div class="mt-auto flex border-t border-slate-50">
+                        <a href="assets/docs/folders/story-modern.zip" download onclick="posthog.capture('Modern Story Download Clicked', { name: 'Modern Short Story', type: 'ZIP' })" class="w-1/2 py-4 text-[10px] sans-label font-bold uppercase tracking-widest text-center border-r border-slate-50 hover:bg-ivory transition-colors text-midnight">
+                            Project Zip
+                        </a>
+                        <a href="assets/docs/story-instructions.pdf" target="_blank" onclick="posthog.capture('Modern Story Guide Clicked', { name: 'Modern Short Story', type: 'PDF' })" class="w-1/2 py-4 text-[10px] sans-label font-bold uppercase tracking-widest text-center hover:bg-ivory transition-colors text-midnight">
+                            User Guide
+                        </a>
                     </div>
                 </div>
-                -->
 
                 <!-- Template 2: Novel Template (Coming Soon) -->
-                <div class="book-item group relative flex flex-col fade-in bg-white border border-slate-100 shadow-sm hover:border-slate-200 hover:shadow-md transition-all duration-300 p-6">
+                <div class="book-item group relative flex flex-col fade-in bg-white border border-slate-100 shadow-sm hover:border-slate-200 hover:shadow-md transition-all duration-300 p-6 max-w-sm w-full">
                     <div class="aspect-[13/14] bg-[#f9f7f2] mb-6 relative overflow-hidden flex items-center justify-center transition-all duration-500">
-                        <div class="absolute top-0 right-0 bg-midnight text-white text-[9px] sans-label px-3 py-1.5 uppercase tracking-widest z-10 font-bold">Upcoming</div>
+                        <div class="absolute top-0 right-0 bg-midnight text-white text-[9px] sans-label px-3 py-1.5 uppercase tracking-widest z-10 font-bold">In Dev</div>
                         <img src="assets/images/novel%20template.png" alt="Novel Template" class="h-[85%] w-auto transform group-hover:scale-105 transition-transform duration-700 pointer-events-none object-contain">
                     </div>
                     
@@ -153,7 +165,7 @@
                         
                         <div class="mt-auto">
                             <a href="contact" class="inline-flex items-center gap-2 text-[10px] sans-label font-bold uppercase tracking-[0.2em] text-midnight group/link">
-                                Interested in early access? Contact me
+                                Interested in early access? <br> Contact me
                                 <span class="w-8 h-px bg-midnight group-hover/link:w-12 transition-all"></span>
                             </a>
                         </div>

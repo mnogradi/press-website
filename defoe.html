@@ -8,12 +8,21 @@
     <meta name="description"
         content="Daniel Defoe's The Storm. A precision-typeset historical edition by North Pass Press.">
     
+    <link rel="canonical" href="https://northpass.press/defoe">
+
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="The Storm | North Pass Press">
     <meta property="og:description" content="Daniel Defoe's The Storm. A precision-typeset historical edition by North Pass Press.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://northpass.press/defoe">
     <meta property="og:image" content="https://northpass.press/assets/images/defoepng.png">
+    <meta property="og:site_name" content="North Pass Press">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Storm | North Pass Press">
+    <meta name="twitter:description" content="Daniel Defoe's The Storm. A precision-typeset historical edition by North Pass Press.">
+    <meta name="twitter:image" content="https://northpass.press/assets/images/defoepng.png">
     <link rel="icon" type="image/png" href="assets/images/spine%20logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -122,7 +131,7 @@
                             Purchase Print Edition ($18.99)
                         </button> -->
                         <a href="#preview" 
-                           onclick="posthog.capture('preview_clicked', { book: 'Defoe - The Storm', source: 'Hero Button' });"
+                           onclick="posthog.capture('Defoe Preview Clicked', { book: 'Defoe - The Storm', source: 'Hero Button' });"
                            class="border border-white/20 text-white px-8 py-4 sans-label hover:bg-white/5 transition-all uppercase tracking-widest text-xs flex items-center">
                             Read Preview
                         </a>
@@ -191,7 +200,7 @@
                 <div class="md:hidden bg-ivory/50 p-6 text-center border-b border-ivory">
                     <p class="text-sm text-slate-600 mb-4">For the best experience on mobile, view the PDF directly.</p>
                     <a href="assets/docs/defoe-storm.pdf" target="_blank" 
-                       onclick="posthog.capture('preview_clicked', { book: 'Defoe - The Storm', format: 'PDF' });"
+                       onclick="posthog.capture('Defoe Preview Clicked', { book: 'Defoe - The Storm', source: 'Mobile PDF Fallback' });"
                        class="inline-block bg-midnight text-white px-6 py-3 rounded-lg sans-label text-[10px] uppercase tracking-widest font-bold">
                         Open Full Preview
                     </a>
