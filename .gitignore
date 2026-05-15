@@ -46,6 +46,7 @@ temp/
 
 # Archive/Backup Files
 *.zip
+!assets/docs/folders/*.zip
 *.tar.gz
 *.rar
 backup/
