@@ -48,7 +48,7 @@
         rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
     <script>
-    !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="Mi Ri init Vi Gi Rr Wi Ji Bi capture calculateEventProperties tn register register_once register_for_session unregister unregister_for_session an getFeatureFlag getFeatureFlagPayload getFeatureFlagResult isFeatureEnabled reloadFeatureFlags updateFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey cancelPendingSurvey canRenderSurvey canRenderSurveyAsync un identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset setIdentity clearIdentity get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException addExceptionStep captureLog startExceptionAutocapture stopExceptionAutocapture loadToolbar get_property getSessionProperty nn Xi createPersonProfile setInternalOrTestUser sn Hi cn opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Ki debug Lr rn getPageViewId captureTraceFeedback captureTraceMetric Di".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="Mi Ri init Vi Gi Rr Wi Ji Bi capture calculateEventProperties tn register register_once register_for_session unregister unregister_for_session an getFeatureFlag getFeatureFlagPayload getFeatureFlagResult isFeatureEnabled reloadFeatureFlags updateFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSuveys renderSurvey displaySurvey cancelPendingSurvey canRenderSurvey canRenderSurveyAsync un identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset setIdentity clearIdentity get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException addExceptionStep captureLog startExceptionAutocapture stopExceptionAutocapture loadToolbar get_property getSessionProperty nn Xi createPersonProfile setInternalOrTestUser sn Hi cn opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Ki debug Lr rn getPageViewId captureTraceFeedback captureTraceMetric Di".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
     posthog.init('phc_nLtxbeT7VAfijb6wWEZ4JboNjXnfFvGzqQTB8QJFErBC', {
         api_host: 'https://us.i.posthog.com',
         defaults: '2026-01-30',
@@ -107,38 +107,21 @@
         </div>
     </header>
 
-    <!-- Shop Utility Bar 
-    <div class="sticky top-[75px] md:top-[90px] z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 px-6 py-4">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between text-[12px] sans-label font-bold uppercase tracking-widest text-slate-500">
-        <div class="flex gap-8 items-center overflow-x-auto no-scrollbar pb-1 md:pb-0 filter-controls">
-            <button data-filter="all" class="filter-btn active text-midnight border-b border-midnight pb-1">All Titles</button>
-            <button data-filter="poetry" class="filter-btn hover:text-midnight transition-colors">Poetry</button>
-            <button data-filter="history" class="filter-btn hover:text-midnight transition-colors">History</button>
-            </div>
-    </div>
-    </div>-->
-
     <!-- All Publications Grid -->
     <section class="py-20 px-6 bg-[#EDE8DF] min-h-[600px]">
-        <div class="max-w-4xl mx-auto">
-            <div id="publications-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-y-10 gap-x-10 transition-all duration-500">
+        <div class="max-w-6xl mx-auto">
+            <div id="publications-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-10 transition-all duration-500">
 
 
                 <!-- Book 1: Bunyan -->
                 <a href="bunyan" class="book-item group cursor-pointer relative flex flex-col fade-in block outline-none hover:outline-none focus:outline-none bg-white border border-slate-100 shadow-sm hover:border-slate-200 hover:shadow-md transition-all duration-300 p-6" data-category="poetry">
                     <div class="aspect-[13/14] bg-[#f9f7f2] mb-6 relative overflow-hidden flex items-center justify-center transition-all duration-500">
-                        <!-- <div class="absolute top-0 right-0 bg-midnight text-white text-[9px] sans-label px-3 py-1.5 uppercase tracking-widest z-10 font-bold">New Release</div> -->
                         <img src="assets/images/bunyanimg.png" alt="A Book for Boys and Girls" class="h-[85%] w-auto  transform group-hover:scale-105 transition-transform duration-700 pointer-events-none object-contain">
                     </div>
                     
                     <div class="flex flex-col flex-grow">
                         <div class="flex justify-between items-start mb-2">
                             <span class="sans-label text-[10px] text-slate font-bold uppercase tracking-widest">Poetry</span>
-                            <div class="text-right">
-                                <!-- <span class="text-sm font-semibold text-midnight">
-                                    <span class="text-[8px] align-top text-slate-400">$</span>8.99
-                                </span> -->
-                            </div>
                         </div>
                         <h3 class="serif-heading text-2xl mb-2 group-hover:text-[#C4A47C] transition-colors">A Book for Boys and Girls</h3>
                         <p class="text-sm text-slate-400 line-clamp-3 mb-4">First published in 1686, <i>A Book for Boys and Girls</i>—later known as <i>Divine Emblems</i>—is John Bunyan's ingenious attempt to “play the fool” in order to win the souls of children and the “childish” alike.</p>
@@ -154,22 +137,15 @@
                 <!-- Book 2: The Storm -->
                 <a href="defoe" class="book-item group cursor-pointer relative flex flex-col fade-in block outline-none hover:outline-none focus:outline-none bg-white border border-slate-100 shadow-sm hover:border-slate-200 hover:shadow-md transition-all duration-300 p-6" data-category="history">
                     <div class="aspect-[13/14] bg-[#f9f7f2] mb-6 relative overflow-hidden flex items-center justify-center transition-all duration-500">
-                        <!-- <div class="absolute top-0 right-0 bg-midnight text-white text-[9px] sans-label px-3 py-1.5 uppercase tracking-widest z-10 font-bold">New Release</div> -->
                         <img src="assets/images/defoepng.png" alt="The Storm" class="h-[85%] w-auto transform group-hover:scale-105 transition-transform duration-700 pointer-events-none object-contain">
                     </div>
                     
                     <div class="flex flex-col flex-grow">
                         <div class="flex justify-between items-start mb-2">
                             <span class="sans-label text-[10px] text-slate font-bold uppercase tracking-widest">History</span>
-                            <div class="text-right">
-                                <!-- <span class="text-sm font-semibold text-midnight">
-                                    <span class="text-[8px] align-top text-slate-400">$</span>18.99
-                                </span> -->
-                            </div>
                         </div>
                         <h3 class="serif-heading text-2xl mb-2 group-hover:text-[#C4A47C] transition-colors">The Storm</h3>
-                        <p class="text-sm text-slate-400 line-clamp-3 mb-4">In the final days of November 1703, a hurricane of unprecedented violence swept across Great Britain, leaving behind a trail of ruin and loss that would be remembered for generations.
-                        </p>
+                        <p class="text-sm text-slate-400 line-clamp-3 mb-4">In the final days of November 1703, a hurricane of unprecedented violence swept across Great Britain, leaving behind a trail of ruin and loss that would be remembered for generations.</p>
                         <div class="mt-auto">
                             <span class="inline-flex items-center gap-2 text-[10px] sans-label font-bold uppercase tracking-[0.2em] text-midnight group/link">
                                 Explore Edition
@@ -179,7 +155,41 @@
                     </div>
                 </a>
 
+                 <!-- Book 3: Sermons (Non-clickable) -->
+                <div class="book-item group relative flex flex-col fade-in bg-white border border-slate-100 shadow-sm p-6" data-category="poetry">
+                    <div class="aspect-[13/14] bg-[#f9f7f2] mb-6 relative overflow-hidden flex items-center justify-center transition-all duration-500">
+                        <img src="assets/images/tbd.png" alt="Through the Storm" class="h-[85%] w-auto pointer-events-none object-contain">
+                    </div>
+                    
+                    <div class="flex flex-col flex-grow">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="sans-label text-[10px] text-slate font-bold uppercase tracking-widest">Sermons</span>
+                        </div>
+                        <h3 class="serif-heading text-2xl mb-2 text-midnight">In the Storm: Sermons from Little Wild Street</h3>
+                        <p class="text-sm text-slate-400 line-clamp-3 mb-4">Three sermons delivered at London's Little Wild Street chapel in remembrance of the Great Storm of 1703.</p>
+                        <div class="mt-auto">
+                            <span class="text-[9px] sans-label font-bold uppercase tracking-[0.2em] text-slate-400">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
 
+                 <!-- Book 4: Defoe (Non-clickable) -->
+                <div class="book-item group relative flex flex-col fade-in bg-white border border-slate-100 shadow-sm p-6" data-category="theology">
+                    <div class="aspect-[13/14] bg-[#f9f7f2] mb-6 relative overflow-hidden flex items-center justify-center transition-all duration-500">
+                        <img src="assets/images/tbd.png" alt="Religious Courtship" class="h-[85%] w-auto pointer-events-none object-contain">
+                    </div>
+                    
+                    <div class="flex flex-col flex-grow">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="sans-label text-[10px] text-slate font-bold uppercase tracking-widest">Theology</span>
+                        </div>
+                        <h3 class="serif-heading text-2xl mb-2 text-midnight">Religious Courtship</h3>
+                        <p class="text-sm text-slate-400 line-clamp-3 mb-4">Blending instruction with narrative, this work utilizes vivid, dialogue-driven family dramas to guide towards godly marriage.</p>
+                        <div class="mt-auto">
+                            <span class="text-[9px] sans-label font-bold uppercase tracking-[0.2em] text-slate-400">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -194,13 +204,10 @@
 
             filterBtns.forEach(btn => {
                 btn.addEventListener('click', () => {
-                    // Update Active Button
                     filterBtns.forEach(b => b.classList.remove('text-midnight', 'border-b', 'border-midnight', 'pb-1'));
                     btn.classList.add('text-midnight', 'border-b', 'border-midnight', 'pb-1');
 
                     const filterValue = btn.getAttribute('data-filter');
-
-                    // Smooth transition for the whole grid
                     grid.style.opacity = '0.5';
                     
                     setTimeout(() => {
@@ -208,7 +215,6 @@
                             if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
                                 item.classList.remove('hidden');
                                 item.style.display = 'flex';
-                                // Trigger vertical reveal
                                 item.style.transform = 'translateY(10px)';
                                 item.style.opacity = '0';
                                 
