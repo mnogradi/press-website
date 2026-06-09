@@ -96,14 +96,20 @@ nav {
 
 nav .container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    height: 75px;
+    justify-content: center;
+    height: 72px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     nav .container {
-        height: 90px;
+        height: auto;
+        padding-top: 1.125rem;
+        padding-bottom: 1.125rem;
+        gap: 0;
     }
 }
 
@@ -136,16 +142,21 @@ nav .container {
 
 /* Nav Links */
 .nav-links {
-    display: none;
-    gap: 2rem;
+    display: flex;
+    gap: 2.5rem;
     align-items: center;
 }
 
-@media (min-width: 1024px) {
-    .nav-links {
-        display: flex;
-        gap: 3rem;
-    }
+/* Divider between logo row and links row on desktop */
+.nav-links-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-top: 1px solid rgba(255,255,255,0.07);
+    padding-top: 0.75rem;
+    margin-top: 0.5rem;
 }
 
 .nav-link {
@@ -191,11 +202,13 @@ nav .container {
 }
 
 .nav-cta {
-    border: 1px solid var(--gold) !important;
-    padding: 0.6rem 1.5rem !important;
+    border: 1px solid rgba(184,150,90,0.6) !important;
+    padding: 0.45rem 1.25rem !important;
     margin-left: 0;
     color: var(--gold) !important;
     transition: all 0.3s ease !important;
+    letter-spacing: 0.18em !important;
+    font-size: 0.72rem !important;
 }
 
 .nav-cta::after { display: none; }

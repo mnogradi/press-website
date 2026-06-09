@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Contact North Pass Press. Reach out for collection inquiries, private commissions, or institutional acquisitions.">
-    <title>Contact Us | North Pass Press</title>
+    <title>Connect | North Pass Press</title>
     <link rel="canonical" href="https://northpass.press/contact">
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Contact Us | North Pass Press">
+    <meta property="og:title" content="Connect | North Pass Press">
     <meta property="og:description" content="Reach out to North Pass Press for collection inquiries, private commissions, or institutional acquisitions.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://northpass.press/contact">
@@ -19,7 +19,7 @@
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Contact Us | North Pass Press">
+    <meta name="twitter:title" content="Connect | North Pass Press">
     <meta name="twitter:description" content="Reach out to North Pass Press for collection inquiries, private commissions, or institutional acquisitions.">
     <meta name="twitter:image" content="https://northpass.press/assets/images/favicon.png">
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
@@ -61,26 +61,33 @@
 
     <!-- Navigation -->
     <nav role="navigation" aria-label="Main navigation" class="bg-midnight border-b border-white/5">
-        <div class="container flex items-center justify-between">
-            <a href="/" class="flex items-center gap-4 group hover:opacity-80 transition-opacity">
-                <img src="assets/images/spine%20logo.png" alt="North Pass Monogram" class="h-10 md:h-12 w-auto brightness-0 invert opacity-90">
-                <span class="logo-main text-white mt-[1px]">North Pass Press</span>
-            </a>
-            
-            <div class="nav-links">
-                <a href="/" class="nav-link">Home</a>
-                <a href="about" class="nav-link">About</a>
-                <a href="publications" class="nav-link">Books</a>
-                <a href="resources" class="nav-link">Resources</a>
-                <a href="services" class="nav-link">Services</a>
-                <a href="contact" class="nav-link nav-cta active">Contact Us</a>
+        <div class="container flex flex-col lg:h-auto justify-center lg:items-center py-0 lg:py-6 h-[75px] md:h-[90px] lg:gap-4">
+            <!-- Top Row: Logo & Mobile Toggle -->
+            <div class="flex items-center justify-between w-full lg:justify-center">
+                <a href="/" class="flex items-center gap-4 group hover:opacity-80 transition-opacity">
+                    <img src="assets/images/spine%20logo.png" alt="North Pass Monogram" class="h-10 md:h-12 w-auto brightness-0 invert opacity-90">
+                    <span class="logo-main text-white mt-[1px]">North Pass Press</span>
+                </a>
+
+                <!-- Mobile Menu Toggle -->
+                <div class="menu-toggle lg:hidden" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
 
-            <!-- Mobile Menu Toggle -->
-            <div class="menu-toggle" id="mobile-menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
+            <!-- Bottom Row: Desktop Navigation Links -->
+            <div class="w-full hidden lg:flex items-center justify-center relative nav-links-row">
+                <div class="nav-links">
+                    <a href="about" class="nav-link">About</a>
+                    <a href="publications" class="nav-link">Books</a>
+                    <a href="resources" class="nav-link">Resources</a>
+                    <a href="services" class="nav-link">Services</a>
+                </div>
+                <div class="absolute right-0">
+                    <a href="contact" class="nav-link nav-cta active">Connect</a>
+                </div>
             </div>
         </div>
 
@@ -89,12 +96,11 @@
             <button id="mobile-close-btn" aria-label="Close menu"
                 style="position:absolute;top:28px;right:32px;background:none;border:none;cursor:pointer;color:white;font-size:1.5rem;line-height:1;opacity:0.7;"
                 onmouseenter="this.style.opacity='1'" onmouseleave="this.style.opacity='0.7'">✕</button>
-            <a href="/" class="nav-link">Home</a>
             <a href="about" class="nav-link">About</a>
             <a href="publications" class="nav-link">Books</a>
             <a href="resources" class="nav-link">Resources</a>
             <a href="services" class="nav-link">Services</a>
-            <a href="contact" class="nav-link nav-cta mt-4 text-center active">Contact Us</a>
+            <a href="contact" class="nav-link nav-cta mt-4 text-center active">Connect</a>
         </div>
     </nav>
 
@@ -205,14 +211,14 @@
                         <li><a href="publications" class="hover:text-white">Books</a></li>
                         <li><a href="resources" class="hover:text-white">Resources</a></li>
                         <li><a href="services" class="hover:text-white">Services</a></li>
-                        <li><a href="contact" class="hover:text-white">Contact Us</a></li>
+                        <li><a href="contact" class="hover:text-white">Connect</a></li>
                     </ul>
                 </div>
                 <div>
                     <div class="h-8 md:h-10 flex items-center mb-3 pt-[2px]">
                         <h4 class="sans-label text-xs uppercase tracking-widest">Connect</h4>
                     </div>
-                    <p class="text-sm text-white/60 mb-4">For inquiries or support, contact us at:</p>
+                    <p class="text-sm text-white/60 mb-4">For inquiries or support, Connect at:</p>
                     <div class="border border-white/20 p-3 sm:p-4 flex justify-between items-center gap-2">
                         <span class="text-xs text-white/40 truncate" id="email-address">contact@northpass.press</span>
                         <button onclick="copyEmail(); posthog.capture('email_copied', { source: 'Contact Page Footer' });" class="text-white/40 shrink-0 text-[10px] font-bold hover:text-white transition-colors uppercase tracking-widest">Copy</button>
