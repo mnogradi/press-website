@@ -90,7 +90,7 @@
 
     <!-- Navigation -->
     <nav role="navigation" aria-label="Main navigation" class="bg-midnight border-b border-white/5">
-        <div class="container flex flex-col lg:h-auto justify-center lg:items-center py-0 lg:py-6 h-[75px] md:h-[90px] lg:gap-4">
+        <div class="container">
             <!-- Top Row: Logo & Mobile Toggle -->
             <div class="flex items-center justify-between w-full lg:justify-center">
                 <a href="/" class="flex items-center gap-4 group hover:opacity-80 transition-opacity">
@@ -115,9 +115,7 @@
                     <a href="resources" class="nav-link">Resources</a>
                     <a href="services" class="nav-link">Services</a>
                 </div>
-                <div class="absolute right-0">
-                    <a href="contact" class="nav-link nav-cta">Connect</a>
-                </div>
+                <a href="contact" class="nav-link nav-cta">Connect</a>
             </div>
         </div>
 
@@ -413,7 +411,7 @@
                     <div class="h-8 md:h-10 flex items-center mb-3 pt-[2px]">
                         <h4 class="sans-label text-xs uppercase tracking-widest">Connect</h4>
                     </div>
-                    <p class="text-sm text-white/60 mb-4">For inquiries or support, Connect at:</p>
+                    <p class="text-sm text-white/60 mb-4">For inquiries or support, contact us at:</p>
                     <div class="border border-white/20 p-3 sm:p-4 flex justify-between items-center gap-2">
                         <span class="text-xs text-white/40 truncate" id="email-address">contact@northpass.press</span>
                         <button class="text-white/40 shrink-0 hover:text-white transition-colors" onclick="copyEmail(); posthog.capture('email_copied', { source: 'Footer' });"
