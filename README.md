@@ -4,7 +4,7 @@ A professional website for North Pass Press, a Christian and English literature 
 
 ## 📧 Contact
 
-For inquiries regarding curriculum or gifting editions:
+For inquiries regarding editions, projects, or services:
 **contact@northpass.press**
 
 ## 📄 License
