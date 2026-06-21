@@ -214,10 +214,11 @@ nav .container {
 }
 
 .nav-cta {
-    border: 1px solid rgba(184,150,90,0.55) !important;
+    border: 1px solid rgba(255,255,255,0.45) !important;
     padding: 0.5rem 1.6rem !important;
     margin-left: 1rem;
-    color: var(--gold) !important;
+    color: rgba(255,255,255,0.85) !important;
+    background: transparent !important;
     transition: all 0.3s ease !important;
     letter-spacing: 0.2em !important;
     font-size: 0.75rem !important;
@@ -293,13 +294,14 @@ nav .container {
 }
 
 .mobile-overlay .nav-cta {
-    color: var(--gold) !important;
-    border-color: rgba(184,150,90,0.4) !important;
+    color: rgba(255,255,255,0.85) !important;
+    border-color: rgba(255,255,255,0.3) !important;
 }
 
 .mobile-overlay .nav-cta:hover {
     background: var(--gold) !important;
     color: var(--midnight) !important;
+    border-color: var(--gold) !important;
 }
 
 /* =============================================

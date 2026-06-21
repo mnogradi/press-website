@@ -82,7 +82,8 @@
                 <div class="nav-links">
                     <a href="about" class="nav-link">About</a>
                     <a href="publications" class="nav-link">Books</a>
-                    <a href="resources" class="nav-link">Resources</a>
+                    <!-- <a href="articles" class="nav-link">Articles</a> -->
+                    <a href="library" class="nav-link">Library</a>
                     <a href="services" class="nav-link">Services</a>
                 </div>
                 <a href="contact" class="nav-link nav-cta active">Connect</a>
@@ -96,7 +97,8 @@
                 onmouseenter="this.style.opacity='1'" onmouseleave="this.style.opacity='0.7'">✕</button>
             <a href="about" class="nav-link">About</a>
             <a href="publications" class="nav-link">Books</a>
-            <a href="resources" class="nav-link">Resources</a>
+            <!-- <a href="articles" class="nav-link">Articles</a> -->
+            <a href="library" class="nav-link">Library</a>
             <a href="services" class="nav-link">Services</a>
             <a href="contact" class="nav-link nav-cta mt-4 text-center active">Connect</a>
         </div>
@@ -108,8 +110,8 @@
         <div class="max-w-7xl mx-auto">
             <div class="max-w-4xl mx-auto text-center mb-16">
                 <span class="sans-label text-slate-400 block mb-2 uppercase tracking-widest text-[10px]">Common Inquiries</span>
-                <h2 class="serif-heading text-3xl md:text-4xl text-midnight">General FAQ</h2>
-                <div class="w-16 h-px bg-slate-200 mx-auto mt-6"></div>
+                <h2 class="serif-heading text-3xl md:text-4xl text-midnight mb-4">General FAQ</h2>
+                <div class="section-rule"></div>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -157,7 +159,8 @@
         <div class="max-w-4xl mx-auto w-full text-center">
             <div class="mb-12">
                 <span class="sans-label text-slate-400 block mb-2 uppercase tracking-widest text-[10px]">Direct Inquiries</span>
-                <h2 class="serif-heading text-3xl text-midnight mb-6">Contact Us</h2>
+                <h2 class="serif-heading text-3xl text-midnight mb-4">Contact Us</h2>
+                <div class="section-rule"></div>
                 <p class="text-slate-600 leading-relaxed text-sm max-w-2xl mx-auto font-light">
                     The Press welcomes all inquiries regarding current editions, future releases, historical restoration requests, and select modern submissions. We are always glad to hear from readers and bibliophiles.
                 </p>
@@ -199,19 +202,23 @@
                     <ul class="text-sm space-y-1.5 text-white/60">
                         <li><a href="about" class="hover:text-white">About</a></li>
                         <li><a href="publications" class="hover:text-white">Books</a></li>
-                        <li><a href="resources" class="hover:text-white">Resources</a></li>
+                        <!-- <li><a href="articles" class="hover:text-white">Articles</a></li> -->
+                        <li><a href="library" class="hover:text-white">Library</a></li>
                         <li><a href="services" class="hover:text-white">Services</a></li>
                         <li><a href="contact" class="hover:text-white">Connect</a></li>
                     </ul>
                 </div>
+                
+                <!-- Connect/Contact Column -->
                 <div>
                     <div class="h-8 md:h-10 flex items-center mb-3 pt-[2px]">
                         <h4 class="sans-label text-xs uppercase tracking-widest">Connect</h4>
                     </div>
-                    <p class="text-sm text-white/60 mb-4">For inquiries or support, contact us at:</p>
-                    <div class="border border-white/20 p-3 sm:p-4 flex justify-between items-center gap-2">
-                        <span class="text-xs text-white/40 truncate" id="email-address">contact@northpass.press</span>
-                        <button onclick="copyEmail(); posthog.capture('email_copied', { source: 'Contact Page Footer' });" class="text-white/40 shrink-0 text-[10px] font-bold hover:text-white transition-colors uppercase tracking-widest">Copy</button>
+                    
+<p class="text-sm text-white/60 mb-4">For inquiries, contact us at:</p>
+                    <div class="border border-white/20 p-3 sm:p-4 flex justify-between items-center gap-2 hover:border-white/40 transition-colors">
+                        <span class="text-xs text-white/50 truncate" id="email-address">contact@northpass.press</span>
+                        <button onclick="copyEmail(); posthog.capture('email_copied', { source: 'Footer' });" class="text-white/40 shrink-0 text-[10px] font-bold hover:text-white transition-colors uppercase tracking-widest">Copy</button>
                     </div>
                 </div>
             </div>
@@ -219,7 +226,10 @@
         <div
             class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-[10px] text-white/30 uppercase tracking-[0.2em]">
             <span>&copy; 2026 North Pass Press</span>
-            <span><a href="privacy" class="hover:text-white transition-colors">Privacy Policy</a></span>
+            <div class="flex gap-6">
+                <span><a href="privacy" class="hover:text-white transition-colors">Privacy Policy</a></span>
+                <span><a href="terms" class="hover:text-white transition-colors">Terms of Service</a></span>
+            </div>
         </div>
     </footer>
 
