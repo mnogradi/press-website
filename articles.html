@@ -55,6 +55,24 @@
         person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
     })
     </script>
+    <script>
+      (function (s, e, n, d, er) {
+        s['Sender'] = er;
+        s[er] = s[er] || function () {
+          (s[er].q = s[er].q || []).push(arguments)
+        }, s[er].l = 1 * new Date();
+        s[er].on = function(event, callback) {
+          s[er].listeners = s[er].listeners || {};
+          (s[er].listeners[event] = s[er].listeners[event] || []).push(callback);
+        };
+        var a = e.createElement(n),
+            m = e.getElementsByTagName(n)[0];
+        a.async = 1;
+        a.src = d;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+      sender('126597960c7056')
+    </script>
 </head>
 
 <body class="overflow-x-hidden bg-[#f9f7f2]">
@@ -122,13 +140,13 @@
                     <div>
                         <div class="flex items-center justify-between mb-4">
                             <span class="sans-label text-[10px] text-gold font-bold uppercase tracking-widest">Review</span>
-                            <time class="sans-label text-[9px] text-slate-400 font-bold uppercase tracking-widest" datetime="2026-05-14">May 14, 2026</time>
+                            <time class="sans-label text-[9px] text-slate-400 font-bold uppercase tracking-widest" datetime="2026-06-26">June 26, 2026</time>
                         </div>
                         <h3 class="serif-heading text-2xl md:text-3xl mb-4 group-hover:text-[#C4A47C] transition-colors leading-snug">
                             <a href="scathing-review">A Scathing Review of a Book Nobody Has Read Yet</a>
                         </h3>
                         <p class="text-slate-500 text-sm md:text-base leading-relaxed mb-6 font-light">
-                            Restoring historical literature requires more than scanning pages. Explore our detailed methodology for preserving 17th-century typeface textures, handling manual kerning anomalies, and honoring original layouts while optimizing readability for modern digital formats.
+                            A formal warning regarding our newly restored edition of John Bunyan's 1686 classic. Our editors strongly advise against engaging with a text containing ideas expressed with such alarming confidence—but if you must know why it was locked away for centuries, read at your own risk.
                         </p>
                     </div>
                     <div class="flex items-center justify-start pt-4 border-t border-slate-50">
@@ -195,6 +213,7 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>

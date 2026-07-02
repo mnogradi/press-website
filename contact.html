@@ -55,6 +55,24 @@
         person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
     })
 </script>
+    <script>
+      (function (s, e, n, d, er) {
+        s['Sender'] = er;
+        s[er] = s[er] || function () {
+          (s[er].q = s[er].q || []).push(arguments)
+        }, s[er].l = 1 * new Date();
+        s[er].on = function(event, callback) {
+          s[er].listeners = s[er].listeners || {};
+          (s[er].listeners[event] = s[er].listeners[event] || []).push(callback);
+        };
+        var a = e.createElement(n),
+            m = e.getElementsByTagName(n)[0];
+        a.async = 1;
+        a.src = d;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+      sender('126597960c7056')
+    </script>
 </head>
 
 <body class="overflow-x-hidden bg-[#f9f7f2]">
@@ -162,7 +180,7 @@
                 <h2 class="serif-heading text-3xl text-midnight mb-4">Contact Us</h2>
                 <div class="section-rule"></div>
                 <p class="text-slate-600 leading-relaxed text-sm max-w-2xl mx-auto font-light">
-                    The Press welcomes all inquiries regarding current editions, future releases, historical restoration requests, and select modern submissions. We are always glad to hear from readers and bibliophiles.
+                    The Press welcomes all inquiries regarding current editions, future releases, historical restoration requests, and select modern submissions. We are always glad to hear from our readers.
                 </p>
             </div>
 
@@ -234,6 +252,7 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>

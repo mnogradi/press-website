@@ -62,6 +62,24 @@
         person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
     })
 </script>
+    <script>
+      (function (s, e, n, d, er) {
+        s['Sender'] = er;
+        s[er] = s[er] || function () {
+          (s[er].q = s[er].q || []).push(arguments)
+        }, s[er].l = 1 * new Date();
+        s[er].on = function(event, callback) {
+          s[er].listeners = s[er].listeners || {};
+          (s[er].listeners[event] = s[er].listeners[event] || []).push(callback);
+        };
+        var a = e.createElement(n),
+            m = e.getElementsByTagName(n)[0];
+        a.async = 1;
+        a.src = d;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+      sender('126597960c7056')
+    </script>
 </head>
 
 <body class="bg-warm-white text-midnight">
@@ -184,11 +202,11 @@
                 <ul class="space-y-4 text-sm font-light text-charcoal">
                     <li class="flex justify-between gap-4">
                         <strong class="font-normal text-slate/70">Format</strong>
-                        <span class="text-right">Paperback Perfect Bound</span>
+                        <span class="text-right">Paperback</span>
                     </li>
                     <li class="flex justify-between gap-4">
                         <strong class="font-normal text-slate/70">Pages</strong>
-                        <span class="text-right">100</span>
+                        <span class="text-right">111</span>
                     </li>
                     <li class="flex justify-between gap-4">
                         <strong class="font-normal text-slate/70">Trim Size</strong>
@@ -196,7 +214,7 @@
                     </li>
                     <li class="flex justify-between gap-4">
                         <strong class="font-normal text-slate/70">Interior</strong>
-                        <span class="text-right">60# Cream Uncoated</span>
+                        <span class="text-right">60# Cream</span>
                     </li>
                     <li class="flex justify-between gap-4">
                         <strong class="font-normal text-slate/70">Cover</strong>
@@ -204,6 +222,20 @@
                     </li>
                 </ul>
             </div>
+        </div>
+        <!-- Subscribe Callout -->
+        <div class="max-w-4xl mx-auto mt-12 border-t border-slate/10 pt-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+            <div>
+                <span class="sans-label text-xs text-slate/50 uppercase tracking-widest block mb-1">Stay Informed</span>
+                <p class="text-slate text-sm font-light leading-relaxed max-w-sm">
+                    Want to know when our next edition is published? Join our circle for updates on new releases.
+                </p>
+            </div>
+            <a href="javascript:void(0);" id="mySubscribe"
+               class="shrink-0 inline-flex items-center gap-2 bg-midnight text-warm-white px-7 py-3.5 sans-label text-[11px] uppercase tracking-widest font-semibold hover:bg-charcoal transition-colors duration-200 border border-transparent hover:border-gold/30">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" class="opacity-70"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5H4.5a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+                Subscribe for Updates
+            </a>
         </div>
     </section>
 
@@ -215,18 +247,18 @@
                 <h2 class="serif-heading text-3xl mt-2">Typesetting Preview</h2>
             </div>
 
-            <div class="bg-warm-white p-2 md:p-4 border border-ivory shadow-card rounded-xl overflow-hidden">
-                <!-- Mobile Fallback -->
-                <div class="md:hidden bg-ivory/50 p-6 text-center border-b border-ivory">
-                    <p class="text-sm text-slate-600 mb-4">For the best experience on mobile, view the PDF directly.</p>
-                    <a href="assets/docs/bunyan-book.pdf" target="_blank" 
-                       onclick="posthog.capture('Bunyan Preview Clicked', { book: 'Bunyan - A Book for Boys and Girls', source: 'Mobile PDF Fallback' });"
-                       class="inline-block bg-midnight text-white px-6 py-3 rounded-lg sans-label text-[10px] uppercase tracking-widest font-bold">
-                        Open Full Preview
-                    </a>
-                </div>
-                
-                <iframe src="assets/docs/bunyan-book.pdf" width="100%" class="h-[400px] md:h-[600px]" style="border:none;"
+            <!-- Mobile Button Only -->
+            <div class="md:hidden text-center">
+                <a href="assets/docs/bunyan-book.pdf" target="_blank"
+                   onclick="posthog.capture('Bunyan Preview Clicked', { book: 'Bunyan - A Book for Boys and Girls', source: 'Mobile PDF Fallback' });"
+                   class="inline-block bg-midnight text-white px-8 py-4 sans-label text-[10px] uppercase tracking-widest font-bold hover:bg-charcoal transition-colors duration-200">
+                    Open Full Preview
+                </a>
+            </div>
+
+            <!-- Desktop Card + iframe -->
+            <div class="hidden md:block bg-warm-white p-4 border border-ivory shadow-card rounded-xl overflow-hidden">
+                <iframe src="assets/docs/bunyan-book.pdf" width="100%" class="h-[600px]" style="border:none;"
                     title="Book Preview"></iframe>
             </div>
         </div>
@@ -284,6 +316,7 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>

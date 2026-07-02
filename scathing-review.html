@@ -50,13 +50,13 @@
     <style>
         .dropcap-letter {
             font-family: 'Playfair Display', serif;
-            font-size: 5rem;
+            font-size: 3.6rem;
             font-weight: 400;
             color: #B8965A;
-            float: left;
+            display: inline-block;
             line-height: 1;
-            margin-right: 0.12em;
-            margin-top: -0.4em;
+            margin-right: 0.05em;
+            vertical-align: -0.2em;
         }
     </style>
     <script>
@@ -66,6 +66,24 @@
             defaults: '2026-01-30',
             person_profiles: 'identified_only',
         })
+    </script>
+    <script>
+      (function (s, e, n, d, er) {
+        s['Sender'] = er;
+        s[er] = s[er] || function () {
+          (s[er].q = s[er].q || []).push(arguments)
+        }, s[er].l = 1 * new Date();
+        s[er].on = function(event, callback) {
+          s[er].listeners = s[er].listeners || {};
+          (s[er].listeners[event] = s[er].listeners[event] || []).push(callback);
+        };
+        var a = e.createElement(n),
+            m = e.getElementsByTagName(n)[0];
+        a.async = 1;
+        a.src = d;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+      sender('126597960c7056')
     </script>
 </head>
 
@@ -135,7 +153,7 @@
                     A Scathing Review of a Book Nobody Has Read Yet
                 </h1>
                 <div class="flex items-center gap-4 text-xs sans-label text-slate-400 border-b border-slate-200 pb-6">
-                    <time datetime="2026-06-15">June 15, 2026</time>
+                    <time datetime="2026-07-02">July 2, 2026</time>
                     <span>&bull;</span>
                     <span>5 Min Read</span>
                 </div>
@@ -144,37 +162,51 @@
             <!-- Article Body -->
             <div class="prose prose-lg text-slate-700 leading-relaxed font-light space-y-6 text-justify">
                 <p>
-                    <span class="">I</span> cannot recommend this book.
+                    <span class="dropcap-letter">I</span> cannot recommend this book.
                 </p>
 
                 <p>After careful examination, I have discovered that it contains ideas.</p>
 
-                <p>The author expresses them with alarming confidence, and the publisher has made no attempt to suppress them. On the contrary, modern typography and explanatory footnotes have been employed to make these ideas more accessible to the general public.</p>
+                <p>The author expresses these ideas with alarming confidence. In utter defiance of fashionable opinion, the publisher has made no attempt to suppress or update them. On the contrary, modern typography and explanatory footnotes have been employed to make these ideas more accessible to the general public. Some archaic words have even been explained, which may, unfortunately, lead to learning.</p>
 
-                <p>Most disturbing of all, neither the author nor the publisher appears the least bit apologetic. The publisher even admits that much of this material has been neglected for over three hundred years. One is naturally led to wonder whether such neglect might have been a mercy.</p>
+                <p>Most disturbing of all, neither the author nor the publisher appears the least bit apologetic. The publisher even boasts of fully restoring the original 1686 text—which was apparently so dangerous that for centuries editors prudently kept it abridged, while the complete text languished in the British Museum. One is naturally led to wonder whether such neglect might have been a mercy.</p>
 
-                <p>The danger is obvious.</p>
+                <p>Above all, it might make you think. The danger is obvious.</p>
+
 
                 <div class="border-b border-gold" style="margin: 2.5rem 0;"></div>
 
-                <p>The joke is, of course, that the ideas contained in these books are only dangerous or offensive to those who are afraid of them.</p>
+                <p>Of course, ideas are only dangerous to those who are afraid to face them.</p>
 
                 <p>John Bunyan certainly was not.</p>
 
-                <p>In the preface to A Book for Boys and Girls, Bunyan critiques society by observing that many of his contemporaries, despite looking like adults, spent their lives playing with toys. Some toys are made of wood and string. Others are made of pride, fashion, vanity, and folly. The years had passed, but the childishness remained.</p>
+                <p>In the preface to <i>A Book for Boys and Girls</i>, Bunyan critiques society by observing that many of his contemporaries, despite appearing to be adults, spent their lives playing with toys. Some toys are made of wood and string. Others are made of pride, fashion, vanity, and folly. The years had passed, but the childishness remained.</p>
 
-                <p>His solution was unusual.</p>
+                <p>Rather than calling for everyone to rise to his level, Bunyan declared that he would cast his "very beard behind the bush" and join the "artificial babes" of his age. He wrote of candles, birds, butterflies, snails, and other ordinary things in the hope of rousing his audience from lethargy and indifference. Yet beneath these playful emblems, he explores themes of mortality, spiritual conviction, the Christian life, the love of Christ, and the nature of true beauty. Bunyan reminds us that even the simplest rhymes can carry the sublimest truths.</p>
 
-                <p>Rather than demanding that everyone rise to his level, Bunyan declared that he would cast his "very beard behind the bush" and join the "artificial babes" of his age. He wrote of candles, birds, butterflies, trees, and other ordinary things in the hope of rousing his audience from lethargy and indifference.</p>
+                <p>More than three centuries later, the strategy remains surprisingly effective.</p>
 
-                <p>Three centuries later, the strategy remains surprisingly effective.</p>
-
-                <p>For all our sophistication, we are not so very different from Bunyan's audience. We still love distractions. We still chase trifles. We still need someone to interrupt us long enough to make us think.</p>
+                <p>For all our sophistication, we are not so different from Bunyan's audience. We still love distractions. We still chase trifles. We still need someone to interrupt us long enough to make us think.</p>
 
                 <p>Beware: You just might learn something.</p>
 
                 
 </div>
+
+            <!-- Subscribe Callout -->
+            <div class="mt-16 pt-10 border-t border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+                <div>
+                    <span class="sans-label text-xs text-slate-400 uppercase tracking-widest block mb-1">Stay Informed</span>
+                    <p class="text-slate-600 text-sm font-light leading-relaxed max-w-sm">
+                        Enjoyed this piece? Join our circle for new essays, publication announcements, and editorial updates from North Pass Press.
+                    </p>
+                </div>
+                <a href="javascript:void(0);" id="mySubscribe"
+                   class="shrink-0 inline-flex items-center gap-2 bg-midnight text-warm-white px-7 py-3.5 sans-label text-[11px] uppercase tracking-widest font-semibold hover:bg-charcoal transition-colors duration-200 border border-transparent hover:border-gold/30">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" class="opacity-70"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5H4.5a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+                    Subscribe for Updates
+                </a>
+            </div>
 
             <!-- Footer Navigation -->
             <div class="mt-16 pt-8 border-t border-slate-200 flex justify-between items-center">
@@ -240,6 +272,7 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>

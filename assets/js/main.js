@@ -1,5 +1,5 @@
 /**
- * Aurora Fidelis Press - Main JavaScript
+ * North Pass Press - Main JavaScript
  * Handles email copying, scroll animations, and mobile menu
  */
 

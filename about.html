@@ -55,6 +55,24 @@
         person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
     })
 </script>
+    <script>
+      (function (s, e, n, d, er) {
+        s['Sender'] = er;
+        s[er] = s[er] || function () {
+          (s[er].q = s[er].q || []).push(arguments)
+        }, s[er].l = 1 * new Date();
+        s[er].on = function(event, callback) {
+          s[er].listeners = s[er].listeners || {};
+          (s[er].listeners[event] = s[er].listeners[event] || []).push(callback);
+        };
+        var a = e.createElement(n),
+            m = e.getElementsByTagName(n)[0];
+        a.async = 1;
+        a.src = d;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+      sender('126597960c7056')
+    </script>
 </head>
 
 <body class="overflow-x-hidden bg-[#f9f7f2]">
@@ -131,7 +149,7 @@
                 </p>
 
                 <p>
-                    Our mission is to provide bibliophiles of all ages with meticulously curated editions 
+                    Our mission is to provide readers of all ages with meticulously curated editions 
                     that honor both content and craftsmanship, bridging the foundations of heritage 
                     with the standards of modern typography.
                 </p>
@@ -230,6 +248,7 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
