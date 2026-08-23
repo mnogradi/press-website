@@ -87,9 +87,33 @@ function initMobileMenu() {
     // Close button inside overlay
     if (closeBtn) closeBtn.addEventListener('click', closeMenu);
 
-    // Close when clicking any nav link
+    // Close when clicking any nav link (except dropdown toggles)
     overlay.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', closeMenu);
+        if (!link.classList.contains('nav-dropdown-toggle')) {
+            link.addEventListener('click', closeMenu);
+        }
+    });
+}
+
+/**
+ * Mobile Dropdown Toggles (Projects nav)
+ */
+function initDropdowns() {
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+            const dropdown = toggle.closest('.nav-dropdown');
+            if (!dropdown) return;
+            const isOpen = dropdown.classList.contains('open');
+            // Close all others first
+            document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'));
+            if (!isOpen) dropdown.classList.add('open');
+            e.stopPropagation();
+        });
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'));
     });
 }
 
@@ -97,4 +121,5 @@ function initMobileMenu() {
 document.addEventListener('DOMContentLoaded', () => {
     initScrollAnimations();
     initMobileMenu();
+    initDropdowns();
 });
