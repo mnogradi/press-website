@@ -23,7 +23,7 @@
   </url>
   <url>
     <loc>https://northpass.press/articles</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -80,6 +80,12 @@
   <url>
     <loc>https://northpass.press/scathing-review</loc>
     <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://northpass.press/defoe-bestseller</loc>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
