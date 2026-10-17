@@ -83,10 +83,10 @@ Notes:
 2. Replace the cover image, the Stripe and Payhip links, and the preview PDF path.
 3. Add the new URL to `sitemap.xml` and link it from `publications.html`.
 
-## Known limitations
+## Design notes
 
-- Tailwind is loaded from its CDN at runtime, which is convenient but meant for prototyping. A compiled stylesheet would load faster and remove the external dependency.
-- The pages share their navigation and footer by copy rather than by include, so changes to either must be made on every page.
+- **No build step.** The site is plain files, so it can be edited in any text editor and hosted anywhere. Tailwind is loaded from its CDN for that reason. A compiled stylesheet would load faster and is the obvious next step.
+- **Shared markup is copied.** The navigation and footer are repeated in each page rather than generated, which keeps the site dependency-free but means a change has to be made in every file.
 
 ## Contact
 
