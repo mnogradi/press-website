@@ -1,4 +1,4 @@
-# North Pass Press Website
+﻿# North Pass Press Website
 
 The website for [North Pass Press](https://northpass.press), a small publisher of restored, unabridged Christian and English literature. The site presents the press's editions, free downloads, articles, and typesetting services, and handles sales and email sign-ups through third-party services.
 
@@ -85,7 +85,9 @@ Notes:
 
 ## Design notes
 
-- **No build step.** The site is plain files, so it can be edited in any text editor and hosted anywhere. Tailwind is loaded from its CDN for that reason. A compiled stylesheet would load faster and is the obvious next step.
+- **Fast, precompiled CSS.** The site no longer relies on the 400KB Tailwind runtime compiler from the CDN. Utility styles are precompiled into ssets/css/tailwind.css. If you add new Tailwind classes, run 
+pm run build:css (or 
+pm run watch:css while editing).
 - **Shared markup is copied.** The navigation and footer are repeated in each page rather than generated, which keeps the site dependency-free but means a change has to be made in every file.
 
 ## Contact
