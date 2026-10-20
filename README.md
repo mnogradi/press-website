@@ -85,7 +85,7 @@ Notes:
 
 ## Design notes
 
-- **Fast, precompiled CSS.** The site no longer relies on the 400KB Tailwind runtime compiler from the CDN. Utility styles are precompiled into ssets/css/tailwind.css. If you add new Tailwind classes, run 
+- **Fast, precompiled CSS.** The site no longer relies on the 400KB Tailwind runtime compiler from the CDN. Utility styles are precompiled into assets/css/tailwind.css. If you add new Tailwind classes, run 
 pm run build:css (or 
 pm run watch:css while editing).
 - **Shared markup is copied.** The navigation and footer are repeated in each page rather than generated, which keeps the site dependency-free but means a change has to be made in every file.
