@@ -112,7 +112,7 @@
         <div class="mobile-overlay" id="mobile-overlay">
             <button id="mobile-close-btn" aria-label="Close menu"
                 style="position:absolute;top:28px;right:32px;background:none;border:none;cursor:pointer;color:white;font-size:1.5rem;line-height:1;opacity:0.7;"
-                onmouseenter="this.style.opacity='1'" onmouseleave="this.style.opacity='0.7'">✕</button>
+                onmouseenter="this.style.opacity='1'" onmouseleave="this.style.opacity='0.7'">âœ•</button>
             <a href="about" class="nav-link">About</a>
             <a href="publications" class="nav-link">Books</a>
             <div class="nav-dropdown">
@@ -145,8 +145,7 @@
                 <div class="section-rule"></div>
             </div>
 
-            <!-- Changed md:grid-cols-2 to md:grid-cols-2 lg:grid-cols-3 and optimized gaps -->
-            <div id="resources-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 transition-all duration-500">
+            <div id="resources-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 transition-all duration-500">
 
                 <!-- Resource 1: Stinton Catechism -->
                 <div
@@ -212,6 +211,35 @@
                     </div>
                 </div>
 
+                <!-- Resource 4: The Tower Verses - Lady Jane Grey -->
+                <div
+                    class="resource-item group bg-white border border-slate-100 shadow-sm hover:border-slate-200 hover:shadow-md transition-all duration-300 p-8 flex flex-col">
+                    <div class="flex justify-between items-start mb-6">
+                        <span
+                            class="sans-label text-[10px] text-gold font-bold uppercase tracking-widest">Poetry</span>
+                        <span class="sans-label text-[9px] text-slate-400 font-bold uppercase tracking-widest">PDF
+                            Edition</span>
+                    </div>
+
+                    <h3 class="serif-heading text-2xl mb-4 group-hover:text-[#C4A47C] transition-colors">The Tower Verses</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-8 font-light">
+                        By Lady Jane Grey (1537&#8211;1554)<br>
+                        <br>Two short poems traditionally said to have been scratched with a pin on the wall of Lady Jane's lodging in the Tower, days before her execution in February 1554. Presented in the original Latin with the English rendering from James Anderson's <em>Ladies of the Reformation</em> (1854), with editorial notes on the sources.
+                    </p>
+
+                    <div class="mt-auto pt-6 border-t border-slate-50">
+                        <a href="assets/docs/jane-grey-verses.pdf" download
+                            onclick="posthog.capture('Jane Grey Download Clicked', { book: 'The Tower Verses', format: 'PDF' }); if(typeof gtag === 'function') gtag('event', 'download', {'event_category': 'PDF', 'event_label': 'Jane Grey Verses'}); "
+                            class="inline-flex items-center gap-3 bg-midnight text-white px-6 py-3 sans-label text-[11px] uppercase tracking-widest font-bold hover:bg-gold transition-colors duration-300 w-full justify-center">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                            </svg>
+                            Download PDF
+                        </a>
+                    </div>
+                </div>
+
                 <!-- Resource 3: Free Copywork pack -->
                 <div
                     class="resource-item group bg-white border border-slate-100 shadow-sm hover:border-slate-200 hover:shadow-md transition-all duration-300 p-8 flex flex-col">
@@ -224,8 +252,7 @@
 
                     <h3 class="serif-heading text-2xl mb-4 group-hover:text-[#C4A47C] transition-colors">Copywork for Young Writers</h3>
                     <p class="text-slate-500 text-sm leading-relaxed mb-8 font-light">
-                        By North Pass Press <br>
-                        <br>A curated collection of Scripture from the King James Version and John Bunyan's <em>A Book for Boys and Girls</em>, formatted for the purpose of copywork and memorization.
+                        By North Pass Press<br><br>A curated collection of Scripture from the King James Version and John Bunyan's <em>A Book for Boys and Girls</em>, formatted for copywork and memorization.
                     </p>
 
                     <div class="mt-auto pt-6 border-t border-slate-50">
