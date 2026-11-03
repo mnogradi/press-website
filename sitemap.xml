@@ -90,6 +90,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://northpass.press/beyond-the-commentary</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://northpass.press/privacy</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
