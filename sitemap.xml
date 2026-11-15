@@ -78,6 +78,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://northpass.press/cevenol</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://northpass.press/voices-in-the-storm</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://northpass.press/return-policy</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://northpass.press/scathing-review</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
